@@ -1300,6 +1300,891 @@ com.baidu.lbsapi.auth.j -> com.baidu.b.a.f:
     boolean c -> c
     boolean d -> d
     void run() -> run
+com.baidu.location.BDLocation -> com.baidu.location.a:
+    int if -> c
+    java.lang.String d -> d
+    double else -> e
+    double for -> f
+    boolean c -> g
+    double f -> h
+    boolean int -> i
+    float new -> j
+    boolean try -> k
+    float long -> l
+    boolean b -> m
+    int do -> n
+    float char -> o
+    java.lang.String goto -> p
+    java.lang.String byte -> q
+    boolean void -> r
+    boolean case -> s
+    java.lang.String a -> t
+    java.lang.String mServerString -> a
+    boolean e -> u
+    com.baidu.location.BDLocation$a mAddr -> b
+    void a(java.lang.Boolean) -> a
+    void setTime(java.lang.String) -> a
+    double getLatitude() -> a
+    void setLatitude(double) -> a
+    double getLongitude() -> b
+    void setLongitude(double) -> b
+    void setSpeed(float) -> a
+    float getRadius() -> c
+    void setRadius(float) -> b
+    void setAddrStr(java.lang.String) -> b
+    void setLocType(int) -> a
+    int getLocType() -> d
+    void setSatelliteNumber(int) -> b
+    void setDerect(float) -> c
+com.baidu.location.BDLocation$a -> com.baidu.location.b:
+    java.lang.String if -> a
+    java.lang.String new -> b
+    java.lang.String int -> c
+    java.lang.String byte -> d
+    java.lang.String do -> e
+    java.lang.String for -> f
+    java.lang.String try -> g
+    com.baidu.location.BDLocation a -> h
+com.baidu.location.BDLocationListener -> com.baidu.location.c:
+    void onReceiveLocation(com.baidu.location.BDLocation) -> a
+    void onReceivePoi(com.baidu.location.BDLocation) -> b
+com.baidu.location.BDNotifyListener -> com.baidu.location.d:
+    double mLatitude -> a
+    double mLongitude -> b
+    float mRadius -> c
+    float differDistance -> d
+    java.lang.String mCoorType -> e
+    double mLatitudeC -> f
+    double mLongitudeC -> g
+    int Notified -> h
+    boolean isAdded -> i
+    com.baidu.location.i mNotifyCache -> j
+    void onNotify(com.baidu.location.BDLocation,float) -> a
+com.baidu.location.Jni -> com.baidu.location.Jni:
+    int case -> a
+    int try -> b
+    int byte -> c
+    int for -> d
+    int int -> e
+    int if -> f
+    int a -> g
+    int do -> h
+    boolean new -> i
+    java.lang.String a(byte[],int) -> a
+    java.lang.String b(double,double,int,int) -> b
+    java.lang.String if(java.lang.String) -> a
+    double[] if(double,double,java.lang.String) -> a
+com.baidu.location.LocationClient -> com.baidu.location.e:
+    java.lang.String e -> a
+    long r -> b
+    long char -> c
+    java.lang.String A -> d
+    com.baidu.location.LocationClientOption l -> e
+    boolean q -> f
+    android.content.Context j -> g
+    android.os.Messenger k -> h
+    com.baidu.location.LocationClient$a do -> i
+    android.os.Messenger i -> j
+    java.util.ArrayList C -> k
+    com.baidu.location.BDLocation x -> l
+    boolean d -> m
+    boolean v -> n
+    boolean g -> o
+    com.baidu.location.LocationClient$b byte -> p
+    boolean a -> q
+    boolean int -> r
+    java.lang.Object new -> s
+    com.baidu.location.i else -> t
+    boolean w -> u
+    com.baidu.location.BDLocationListener c -> v
+    java.lang.String z -> w
+    java.lang.String u -> x
+    java.lang.Boolean long -> y
+    java.lang.Boolean case -> z
+    android.content.ServiceConnection t -> A
+    void setLocOption(com.baidu.location.LocationClientOption) -> a
+    void requestNotifyLocation() -> a
+    void try() -> e
+    boolean isStarted() -> b
+    void start() -> c
+    void for() -> f
+    void stop() -> d
+    void int() -> g
+    void onRegisterNotify(android.os.Message) -> a
+    void onRemoveNotifyEvent(android.os.Message) -> b
+    void if(android.os.Message) -> d
+    android.os.Bundle if() -> h
+    android.os.Bundle a() -> i
+    void registerNotifyLocationListener(com.baidu.location.BDLocationListener) -> a
+    void onRegisterNotifyLocationListener(android.os.Message) -> c
+    void registerLocationListener(com.baidu.location.BDLocationListener) -> b
+    void for(android.os.Message) -> e
+    void unRegisterLocationListener(com.baidu.location.BDLocationListener) -> c
+    void a(android.os.Message) -> f
+    void new() -> j
+    void byte() -> k
+    void do() -> l
+    void a(android.os.Message,int) -> a
+    void do(android.os.Message) -> g
+    void a(int) -> a
+    android.os.Messenger a(com.baidu.location.LocationClient,android.os.Messenger) -> a
+    android.os.Messenger char(com.baidu.location.LocationClient) -> a
+    boolean if(com.baidu.location.LocationClient,boolean) -> a
+    android.os.Messenger for(com.baidu.location.LocationClient) -> b
+    android.os.Bundle long(com.baidu.location.LocationClient) -> c
+    boolean do(com.baidu.location.LocationClient,boolean) -> b
+    com.baidu.location.LocationClientOption try(com.baidu.location.LocationClient) -> d
+    com.baidu.location.LocationClient$a new(com.baidu.location.LocationClient) -> e
+    java.lang.Object do(com.baidu.location.LocationClient) -> f
+    boolean for(com.baidu.location.LocationClient,boolean) -> c
+    java.util.ArrayList else(com.baidu.location.LocationClient) -> g
+    void for(com.baidu.location.LocationClient,android.os.Message) -> a
+    void do(com.baidu.location.LocationClient,android.os.Message) -> b
+    void if(com.baidu.location.LocationClient,android.os.Message) -> c
+    void goto(com.baidu.location.LocationClient) -> h
+    void if(com.baidu.location.LocationClient) -> i
+    void case(com.baidu.location.LocationClient) -> j
+    void a(com.baidu.location.LocationClient) -> k
+    void int(com.baidu.location.LocationClient) -> l
+    void byte(com.baidu.location.LocationClient) -> m
+    boolean a(com.baidu.location.LocationClient,boolean) -> d
+    void a(com.baidu.location.LocationClient,android.os.Message,int) -> a
+    void a(com.baidu.location.LocationClient,android.os.Message) -> d
+com.baidu.location.LocationClient$1 -> com.baidu.location.g:
+    com.baidu.location.LocationClient a -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.baidu.location.LocationClient$a -> com.baidu.location.h:
+    com.baidu.location.LocationClient a -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.baidu.location.LocationClient$b -> com.baidu.location.i:
+    com.baidu.location.LocationClient a -> a
+    void run() -> run
+com.baidu.location.LocationClientOption -> com.baidu.location.j:
+    java.lang.String try -> a
+    java.lang.String char -> b
+    boolean case -> c
+    int int -> d
+    int long -> e
+    java.lang.String new -> f
+    int goto -> g
+    boolean void -> h
+    boolean for -> i
+    boolean else -> j
+    boolean if -> k
+    float do -> l
+    int a -> m
+    java.lang.String byte -> n
+    boolean equals(com.baidu.location.LocationClientOption) -> a
+    void setCoorType(java.lang.String) -> a
+    void setOpenGps(boolean) -> a
+    void setScanSpan(int) -> a
+    boolean isDisableCache() -> a
+com.baidu.location.a -> com.baidu.location.k:
+    java.lang.String if -> a
+    java.util.ArrayList do -> b
+    android.os.Handler int -> c
+    boolean for -> d
+    boolean a -> e
+    boolean for() -> a
+    void int(android.os.Message) -> a
+    void if(android.os.Message) -> b
+    boolean for(android.os.Message) -> c
+    java.lang.String a(android.os.Message) -> d
+    void a(java.lang.String,int) -> a
+    void a(java.lang.String) -> a
+    void if(java.lang.String) -> b
+    void a(java.lang.String,android.os.Message) -> a
+    java.lang.String byte() -> b
+    int do(android.os.Message) -> e
+    com.baidu.location.a$a a(android.os.Messenger) -> a
+    void a(com.baidu.location.a$a) -> a
+    void do() -> e
+    void int() -> f
+    void a() -> g
+    void new() -> c
+    java.lang.String try() -> d
+com.baidu.location.a$a -> com.baidu.location.l:
+    java.lang.String int -> a
+    android.os.Messenger for -> b
+    com.baidu.location.LocationClientOption do -> c
+    int if -> d
+    com.baidu.location.a a -> e
+    void if(java.lang.String) -> a
+    void a(java.lang.String,int) -> a
+    void a(java.lang.String) -> b
+    void if() -> a
+    void a(int) -> a
+    void a(int,java.lang.String,java.lang.String) -> a
+    void a(com.baidu.location.a$a,int) -> a
+com.baidu.location.b -> com.baidu.location.m:
+    long o -> a
+    android.content.Context f -> b
+    android.location.LocationManager do -> c
+    android.location.Location D -> d
+    com.baidu.location.b$b v -> e
+    android.location.GpsStatus a -> f
+    com.baidu.location.b$a new -> g
+    int k -> h
+    long d -> i
+    long long -> j
+    boolean int -> k
+    android.os.Handler F -> l
+    boolean r -> m
+    java.lang.String B -> n
+    boolean A -> o
+    long C -> p
+    int I -> q
+    boolean u -> r
+    boolean e -> s
+    java.util.List s -> t
+    java.lang.String g -> u
+    java.lang.String try -> v
+    java.lang.String m -> w
+    java.lang.String p -> x
+    com.baidu.location.b$d for -> y
+    java.lang.String L -> z
+    java.io.File y -> A
+    java.lang.StringBuffer w -> B
+    boolean char -> C
+    int case -> D
+    int c -> E
+    long byte -> F
+    long H -> G
+    long J -> H
+    int j -> I
+    int G -> J
+    int b -> K
+    void i() -> a
+    void j() -> b
+    java.lang.String if(android.location.Location) -> a
+    java.lang.String do() -> c
+    android.location.Location int() -> d
+    boolean new() -> e
+    boolean for() -> f
+    boolean a(android.location.Location,android.location.Location,boolean) -> a
+    void a(android.location.Location) -> b
+    void a(double,double,float) -> a
+    void a(boolean) -> b
+    java.lang.String k() -> g
+    boolean if(int,int,int) -> b
+    boolean d() -> x
+    void void() -> y
+    java.lang.String e() -> h
+    void a(com.baidu.location.b,android.location.Location) -> a
+    boolean a(com.baidu.location.b,boolean) -> a
+    boolean a(com.baidu.location.b) -> a
+    void if(com.baidu.location.b,boolean) -> b
+    long do(com.baidu.location.b,long) -> a
+    android.location.LocationManager int(com.baidu.location.b) -> b
+    android.location.GpsStatus case(com.baidu.location.b) -> c
+    android.location.GpsStatus a(com.baidu.location.b,android.location.GpsStatus) -> a
+    int h() -> i
+    long a(com.baidu.location.b,long) -> b
+    int a(int) -> a
+    long do(com.baidu.location.b) -> d
+    boolean try(com.baidu.location.b) -> e
+    java.util.List byte(com.baidu.location.b) -> f
+    java.lang.String for(com.baidu.location.b) -> g
+    java.lang.String new(com.baidu.location.b) -> h
+    java.lang.String if(com.baidu.location.b) -> i
+    java.lang.String a(java.lang.String) -> a
+    java.lang.String do(com.baidu.location.b,java.lang.String) -> a
+    java.lang.String a(com.baidu.location.b,java.lang.String) -> b
+    java.lang.String if(com.baidu.location.b,java.lang.String) -> c
+    boolean do(com.baidu.location.b,boolean) -> c
+    long if(com.baidu.location.b,long) -> c
+    boolean l() -> j
+    int if(int) -> b
+    java.lang.StringBuffer a(java.lang.StringBuffer) -> a
+    java.lang.StringBuffer g() -> k
+    int do(int) -> c
+    long if(long) -> a
+    long a(long) -> b
+    long do(long) -> c
+    boolean if(boolean) -> a
+    long a() -> l
+    long else() -> m
+    long m() -> n
+    int byte() -> o
+    int int(int) -> d
+    int for(int) -> e
+    int new(int) -> f
+    int goto() -> p
+    int if() -> q
+    int long() -> r
+    int char() -> s
+    int c() -> t
+    java.io.File b() -> u
+    void case() -> v
+    boolean f() -> w
+    boolean a(int,int,int) -> a
+com.baidu.location.b$1 -> com.baidu.location.n:
+com.baidu.location.b$a -> com.baidu.location.o:
+    com.baidu.location.b a -> a
+    void onGpsStatusChanged(int) -> onGpsStatusChanged
+    void onNmeaReceived(long,java.lang.String) -> onNmeaReceived
+com.baidu.location.b$b -> com.baidu.location.p:
+    com.baidu.location.b a -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+com.baidu.location.b$c -> com.baidu.location.q:
+    boolean f -> c
+    java.lang.String d -> d
+    boolean r -> e
+    java.lang.String goto -> f
+    double else -> g
+    double byte -> h
+    double o -> i
+    int h -> j
+    int m -> k
+    java.lang.String q -> l
+    boolean long -> m
+    java.lang.String k -> n
+    char c -> o
+    double j -> p
+    double a -> q
+    java.lang.String p -> r
+    boolean i -> s
+    int try -> t
+    double b -> u
+    double case -> v
+    double char -> w
+    java.util.List new -> x
+    boolean void -> y
+    java.util.List e -> z
+    int n -> A
+    int do -> a
+    com.baidu.location.b l -> b
+    void void() -> a
+    boolean a(java.lang.String) -> a
+    int c() -> b
+    int a(boolean,boolean,boolean,boolean,boolean) -> a
+    double[] a(java.util.List) -> a
+    double[] if(double,double) -> a
+    double[] a(double,double) -> b
+    boolean if() -> c
+    double l() -> d
+    double d() -> e
+    double try() -> f
+    double case() -> g
+    double j() -> h
+    double b() -> i
+    double a() -> j
+    int goto() -> k
+com.baidu.location.b$c$a -> com.baidu.location.r:
+    int int -> b
+    int a -> c
+    int if -> d
+    int do -> e
+    com.baidu.location.b$c for -> a
+    int a() -> a
+    int if() -> b
+    int do() -> c
+com.baidu.location.b$d -> com.baidu.location.s:
+    java.lang.String a -> a
+    boolean a(android.location.Location) -> a
+    boolean a(android.location.Location,int,int) -> a
+    boolean a(java.lang.String) -> a
+    java.lang.String a(int) -> a
+    void do() -> a
+com.baidu.location.c -> com.baidu.location.t:
+    java.lang.String else -> a
+    android.content.Context if -> b
+    android.telephony.TelephonyManager try -> c
+    com.baidu.location.c$a a -> d
+    java.util.List new -> e
+    java.lang.String byte -> f
+    java.lang.String goto -> g
+    android.os.Handler do -> h
+    com.baidu.location.c$b int -> i
+    boolean b -> j
+    java.lang.reflect.Method long -> k
+    java.lang.reflect.Method case -> l
+    java.lang.reflect.Method for -> m
+    java.lang.Class d -> n
+    long void -> o
+    int c -> p
+    boolean char -> q
+    void do() -> a
+    void byte() -> b
+    int new() -> c
+    boolean if() -> f
+    com.baidu.location.c$a a() -> d
+    void a(android.telephony.CellLocation) -> a
+    java.lang.String a(boolean) -> a
+    long try() -> e
+    com.baidu.location.c$a for(com.baidu.location.c) -> a
+    java.util.List do(com.baidu.location.c) -> b
+    android.telephony.TelephonyManager if(com.baidu.location.c) -> c
+    void a(com.baidu.location.c,android.telephony.CellLocation) -> a
+    android.os.Handler a(com.baidu.location.c) -> d
+com.baidu.location.c$a -> com.baidu.location.u:
+    int for -> a
+    int try -> b
+    int do -> c
+    int if -> d
+    long byte -> e
+    int int -> f
+    char new -> g
+    com.baidu.location.c a -> h
+    boolean a(com.baidu.location.c$a) -> a
+    boolean do() -> a
+    boolean for() -> b
+    java.lang.String a() -> c
+    java.lang.String toString() -> toString
+    java.lang.String if() -> d
+    java.lang.String int() -> e
+com.baidu.location.c$b -> com.baidu.location.v:
+    com.baidu.location.c a -> a
+    void onCellLocationChanged(android.telephony.CellLocation) -> onCellLocationChanged
+    void onSignalStrengthsChanged(android.telephony.SignalStrength) -> onSignalStrengthsChanged
+com.baidu.location.e -> com.baidu.location.w:
+    java.lang.String try -> a
+    long f -> b
+    long new -> c
+    long a -> d
+    android.content.Context goto -> e
+    android.os.Handler if -> f
+    android.net.wifi.WifiManager void -> g
+    com.baidu.location.e$b char -> h
+    com.baidu.location.e$a c -> i
+    com.baidu.location.e$c case -> j
+    long b -> k
+    long long -> l
+    boolean int -> m
+    java.lang.Object g -> n
+    java.lang.reflect.Method e -> o
+    boolean for -> p
+    boolean d -> q
+    boolean else -> r
+    boolean do -> s
+    void try() -> a
+    void case() -> b
+    void else() -> c
+    boolean a() -> d
+    boolean new() -> e
+    java.lang.String char() -> f
+    com.baidu.location.e$c int() -> g
+    com.baidu.location.e$c byte() -> h
+    void if() -> k
+    void goto() -> l
+    void for() -> i
+    boolean do(com.baidu.location.e) -> a
+    android.os.Handler if(com.baidu.location.e) -> b
+    boolean a(com.baidu.location.e,boolean) -> a
+    void a(com.baidu.location.e) -> c
+    void for(com.baidu.location.e) -> d
+    java.lang.String do() -> j
+com.baidu.location.e$1 -> com.baidu.location.x:
+com.baidu.location.e$a -> com.baidu.location.y:
+    com.baidu.location.e a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.baidu.location.e$b -> com.baidu.location.z:
+    com.baidu.location.e a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.baidu.location.e$c -> com.baidu.location.aa:
+    java.util.List do -> a
+    long if -> c
+    long for -> d
+    com.baidu.location.e a -> b
+    java.lang.String for() -> a
+    int new() -> b
+    java.lang.String byte() -> c
+    java.lang.String try() -> d
+    java.lang.String a(int) -> a
+    java.lang.String case() -> e
+    void a() -> i
+    java.lang.String if(int) -> b
+    boolean if(com.baidu.location.e$c) -> a
+    boolean do(com.baidu.location.e$c) -> b
+    boolean a(com.baidu.location.e$c) -> c
+    boolean a(com.baidu.location.e$c,com.baidu.location.e$c,float) -> a
+    boolean do() -> f
+    boolean int() -> g
+    boolean if() -> h
+com.baidu.location.e$d -> com.baidu.location.ab:
+    com.baidu.location.e a -> a
+    void run() -> run
+com.baidu.location.f -> com.baidu.location.f:
+    java.lang.String aa -> a
+    java.lang.String m -> d
+    java.lang.String a -> e
+    java.io.File j -> f
+    java.io.File k -> g
+    android.os.Handler P -> b
+    android.os.Messenger al -> c
+    com.baidu.location.c r -> h
+    com.baidu.location.b Z -> i
+    com.baidu.location.e E -> j
+    com.baidu.location.a as -> k
+    com.baidu.location.e$c B -> l
+    com.baidu.location.e$c char -> m
+    com.baidu.location.e$c ac -> n
+    com.baidu.location.c$a try -> o
+    com.baidu.location.c$a aj -> p
+    com.baidu.location.c$a u -> q
+    android.location.Location f -> r
+    java.lang.String h -> s
+    java.lang.String new -> t
+    java.lang.String G -> u
+    boolean ab -> v
+    boolean W -> w
+    boolean M -> x
+    boolean ah -> y
+    long N -> z
+    long d -> A
+    com.baidu.location.f$c y -> B
+    android.database.sqlite.SQLiteDatabase R -> C
+    java.lang.String if -> D
+    java.lang.String A -> E
+    java.lang.String aq -> F
+    boolean O -> G
+    boolean goto -> H
+    java.lang.String V -> I
+    int X -> J
+    boolean I -> K
+    double o -> L
+    double n -> M
+    double q -> N
+    long D -> O
+    boolean ak -> P
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    void do(android.os.Message) -> a
+    void try(android.os.Message) -> b
+    void byte(android.os.Message) -> c
+    void if() -> f
+    void if(android.os.Message) -> d
+    void a(android.os.Message) -> e
+    void else() -> g
+    void do() -> h
+    void void() -> i
+    void try() -> j
+    java.lang.String a(java.lang.String) -> a
+    void long() -> k
+    boolean a(com.baidu.location.e$c) -> a
+    boolean a(com.baidu.location.c$a) -> a
+    void for(android.os.Message) -> f
+    void int(android.os.Message) -> g
+    void new(android.os.Message) -> h
+    void do(java.lang.String) -> b
+    java.lang.String if(boolean) -> a
+    java.lang.String a(boolean) -> b
+    void if(java.lang.String) -> c
+    void c() -> l
+    void byte() -> m
+    void a(android.os.Message,int) -> a
+    void int() -> n
+    void b() -> o
+    void a(int) -> a
+    void case() -> p
+    void goto() -> a
+    java.lang.String new() -> b
+    boolean char() -> c
+    boolean do(com.baidu.location.f) -> a
+    boolean a(com.baidu.location.f,boolean) -> a
+    void goto(com.baidu.location.f) -> b
+    boolean if(com.baidu.location.f) -> c
+    void do(com.baidu.location.f,android.os.Message) -> a
+    void a(com.baidu.location.f,android.os.Message) -> b
+    void try(com.baidu.location.f,android.os.Message) -> c
+    void a(com.baidu.location.f,android.os.Message,int) -> a
+    void int(com.baidu.location.f,android.os.Message) -> d
+    void else(com.baidu.location.f) -> d
+    void byte(com.baidu.location.f) -> e
+    void for(com.baidu.location.f,android.os.Message) -> e
+    void int(com.baidu.location.f) -> f
+    void if(com.baidu.location.f,android.os.Message) -> f
+    void byte(com.baidu.location.f,android.os.Message) -> g
+    void new(com.baidu.location.f,android.os.Message) -> h
+    void a(com.baidu.location.f) -> g
+    void try(com.baidu.location.f) -> h
+    void b(com.baidu.location.f) -> i
+    void for(com.baidu.location.f) -> j
+    void a(com.baidu.location.f,int) -> a
+    com.baidu.location.f$c case(com.baidu.location.f) -> k
+    java.io.File a(java.io.File) -> a
+    com.baidu.location.e long(com.baidu.location.f) -> l
+    com.baidu.location.c void(com.baidu.location.f) -> m
+    java.io.File for() -> d
+    java.lang.String char(com.baidu.location.f) -> n
+    java.io.File a() -> e
+    com.baidu.location.a new(com.baidu.location.f) -> o
+com.baidu.location.f$1 -> com.baidu.location.ac:
+com.baidu.location.f$a -> com.baidu.location.ad:
+    android.content.Context if -> b
+    com.baidu.location.f a -> a
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+    void a(java.io.File,java.lang.String,java.lang.String) -> a
+    void a() -> a
+    java.lang.String a(java.lang.Throwable) -> a
+    boolean a(java.lang.String,java.lang.String) -> a
+com.baidu.location.f$b -> com.baidu.location.ae:
+    com.baidu.location.f a -> a
+    void run() -> run
+com.baidu.location.f$c -> com.baidu.location.af:
+    long new -> b
+    int char -> c
+    android.app.AlarmManager try -> d
+    com.baidu.location.f$c$a case -> e
+    android.app.PendingIntent d -> f
+    android.content.Context goto -> g
+    long void -> h
+    long[] a -> i
+    int int -> j
+    com.baidu.location.c$a b -> k
+    java.lang.String long -> l
+    int byte -> m
+    boolean do -> n
+    boolean if -> o
+    boolean else -> p
+    java.lang.String c -> q
+    com.baidu.location.f e -> a
+    void try() -> a
+    void do() -> b
+    void for() -> c
+    void a() -> d
+    void if() -> e
+    void case() -> f
+    void new() -> g
+    void byte() -> h
+    java.lang.String a(com.baidu.location.f$c,java.lang.String) -> a
+com.baidu.location.f$c$a -> com.baidu.location.ag:
+    com.baidu.location.f$c a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.baidu.location.f$d -> com.baidu.location.ah:
+    com.baidu.location.f a -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.baidu.location.g -> com.baidu.location.ai:
+    java.lang.String new -> a
+    int c -> b
+    int void -> c
+    java.lang.String k -> d
+    java.lang.String d -> e
+    java.lang.String do -> f
+    java.lang.String for -> g
+    java.lang.String long -> h
+    boolean i -> i
+    boolean else -> j
+    boolean b -> k
+    boolean char -> l
+    boolean g -> m
+    java.util.ArrayList e -> n
+    int a -> o
+    android.net.Uri if -> p
+    int try -> q
+    java.lang.String j -> r
+    int f -> s
+    int goto -> t
+    android.os.Handler int -> u
+    android.os.Handler l -> v
+    boolean a(java.lang.String,android.os.Handler) -> a
+    boolean if(java.lang.String,android.os.Handler) -> b
+    void f() -> a
+    void a(java.lang.String,boolean) -> a
+    boolean a(android.content.Context) -> a
+    int do(android.content.Context) -> b
+    int if(android.content.Context) -> c
+    boolean if(java.lang.String) -> a
+    void c() -> b
+    void for() -> c
+    void byte() -> d
+    int a(android.content.Context,android.net.NetworkInfo) -> a
+    int new() -> e
+    java.lang.String else() -> f
+    java.lang.String goto() -> g
+    int b() -> h
+    java.lang.String long() -> i
+    int e() -> j
+    java.lang.String void() -> k
+    int g() -> l
+    android.os.Handler try() -> m
+    java.lang.String do(java.lang.String) -> b
+    android.os.Handler if(android.os.Handler) -> a
+    boolean a(boolean) -> a
+    java.lang.String if() -> n
+    java.lang.String a() -> o
+    android.os.Handler int() -> p
+    android.os.Handler a(android.os.Handler) -> b
+    boolean if(boolean) -> b
+    java.util.ArrayList d() -> q
+    int char() -> r
+    java.util.ArrayList a(java.util.ArrayList) -> a
+    boolean int(boolean) -> c
+    boolean case() -> s
+    java.lang.String do() -> t
+    java.lang.String a(java.lang.String) -> c
+    boolean for(boolean) -> d
+    boolean do(boolean) -> e
+com.baidu.location.g$1 -> com.baidu.location.aj:
+    void run() -> run
+com.baidu.location.g$2 -> com.baidu.location.ak:
+    void run() -> run
+com.baidu.location.g$3 -> com.baidu.location.al:
+    void run() -> run
+com.baidu.location.g$4 -> com.baidu.location.am:
+    void run() -> run
+com.baidu.location.i -> com.baidu.location.an:
+    java.lang.String do -> a
+    java.util.ArrayList byte -> b
+    float goto -> c
+    com.baidu.location.BDLocation case -> d
+    long b -> e
+    com.baidu.location.LocationClient d -> f
+    android.content.Context if -> g
+    int a -> h
+    long char -> i
+    boolean void -> j
+    boolean long -> k
+    android.app.PendingIntent try -> l
+    android.app.AlarmManager for -> m
+    com.baidu.location.i$b else -> n
+    com.baidu.location.i$a int -> o
+    boolean c -> p
+    void if() -> a
+    int if(com.baidu.location.BDNotifyListener) -> a
+    int do(com.baidu.location.BDNotifyListener) -> b
+    boolean do() -> b
+    void a() -> c
+    void a(long) -> a
+    void a(com.baidu.location.BDLocation) -> a
+    void a(com.baidu.location.i,com.baidu.location.BDLocation) -> a
+    java.lang.String a(com.baidu.location.i) -> a
+    java.util.ArrayList do(com.baidu.location.i) -> b
+    com.baidu.location.LocationClient if(com.baidu.location.i) -> c
+com.baidu.location.i$a -> com.baidu.location.ao:
+    com.baidu.location.i a -> a
+    void onReceiveLocation(com.baidu.location.BDLocation) -> a
+    void onReceivePoi(com.baidu.location.BDLocation) -> b
+com.baidu.location.i$b -> com.baidu.location.ap:
+    com.baidu.location.i a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.baidu.location.j -> com.baidu.location.aq:
+    boolean try -> a
+    boolean v -> b
+    boolean I -> c
+    boolean b -> d
+    boolean else -> e
+    int void -> f
+    java.lang.String for -> aa
+    java.lang.String x -> ab
+    java.lang.String do -> g
+    boolean r -> ac
+    boolean n -> ad
+    boolean p -> ae
+    java.lang.String w -> af
+    java.lang.Process y -> ag
+    java.lang.String f -> h
+    java.lang.String j -> i
+    java.lang.String R -> j
+    boolean J -> k
+    boolean M -> l
+    double O -> m
+    double c -> n
+    double s -> o
+    double byte -> p
+    int long -> q
+    byte[] o -> r
+    boolean e -> s
+    int goto -> t
+    float case -> u
+    float A -> v
+    float char -> w
+    float C -> x
+    int t -> y
+    int a -> z
+    int u -> A
+    int if -> B
+    int int -> C
+    int k -> D
+    int K -> E
+    float T -> F
+    float Q -> G
+    float d -> H
+    float H -> I
+    int F -> J
+    float new -> K
+    int h -> L
+    float D -> M
+    float S -> N
+    float P -> O
+    int N -> P
+    int L -> Q
+    boolean m -> R
+    boolean G -> S
+    int i -> T
+    int g -> U
+    int l -> V
+    long z -> W
+    long B -> X
+    long q -> Y
+    int E -> Z
+    int if(java.lang.String,java.lang.String,java.lang.String) -> a
+    float a(java.lang.String,java.lang.String,java.lang.String) -> b
+    double do(java.lang.String,java.lang.String,java.lang.String) -> c
+    java.lang.String a(java.lang.String,java.lang.String,java.lang.String,double) -> a
+    java.lang.String a() -> a
+    java.lang.String a(com.baidu.location.c$a,com.baidu.location.e$c,android.location.Location,java.lang.String,int) -> a
+    void for() -> b
+    void int() -> c
+    void a(java.lang.String,java.lang.String) -> a
+    void if(java.lang.String,java.lang.String) -> b
+    boolean a(java.lang.String) -> a
+    java.lang.String do() -> d
+    java.lang.String a(byte[],boolean) -> a
+    java.lang.String a(byte[],java.lang.String,boolean) -> a
+com.baidu.location.j$a -> com.baidu.location.ar:
+    java.lang.String if -> a
+    java.lang.String if(android.content.Context) -> a
+    java.lang.String a(android.content.Context) -> b
+com.baidu.location.j$b -> com.baidu.location.as:
+    java.lang.String a(android.content.Context) -> a
+    java.lang.String do(android.content.Context) -> b
+    java.lang.String if(android.content.Context) -> c
+com.baidu.location.k -> com.baidu.location.at:
+    java.lang.String else -> a
+    java.util.ArrayList void -> b
+    java.util.ArrayList try -> c
+    java.util.ArrayList f -> d
+    java.lang.String h -> e
+    java.io.File c -> f
+    int char -> g
+    int if -> h
+    int i -> i
+    int case -> j
+    int j -> k
+    int g -> l
+    double e -> m
+    double a -> n
+    double long -> o
+    double d -> p
+    int new -> q
+    int b -> r
+    int int -> s
+    android.location.Location goto -> t
+    android.location.Location byte -> u
+    android.location.Location do -> v
+    com.baidu.location.e$c for -> w
+    java.lang.String a() -> a
+    void a(com.baidu.location.c$a,com.baidu.location.e$c,android.location.Location,java.lang.String) -> a
+    void a(double,double,double,double) -> a
+    void if() -> b
+    boolean a(android.location.Location,boolean) -> a
+    boolean a(android.location.Location) -> a
+    boolean a(android.location.Location,com.baidu.location.e$c) -> a
+    void if(java.lang.String) -> a
+    void a(java.lang.String) -> b
+    void do(java.lang.String) -> c
+    int a(int,int,int,long) -> a
+    int if(java.util.List,int) -> a
+    int a(java.util.List,int) -> b
+    boolean a(int,int,int,int,long) -> a
+    void a(com.baidu.location.c$a,com.baidu.location.e$c,java.lang.String,double,double,java.lang.String) -> a
 com.baidu.mapapi.SDKInitializer -> com.baidu.c.a:
     boolean a -> a
     void initialize(java.lang.String,android.content.Context) -> a
@@ -1363,7 +2248,6 @@ com.baidu.mapapi.search.core.SearchResult$ERRORNO -> com.baidu.c.b.a.c:
 com.baidu.mapapi.search.geocode.GeoCodeResult -> com.baidu.c.b.b.a:
     com.baidu.mapapi.model.LatLng a -> b
     java.lang.String b -> c
-    com.baidu.mapapi.model.LatLng getLocation() -> a
     void a(com.baidu.mapapi.model.LatLng) -> a
     void setAddress(java.lang.String) -> a
 com.baidu.mapapi.search.geocode.GeoCoder -> com.baidu.c.b.b.b:
@@ -1753,20 +2637,10 @@ com.example.logic.Util$LoadBitAsynk -> com.example.logic.n:
 com.example.scaningthestreet.util.LocationUtil -> com.example.a.a.a:
     android.content.Context mContext -> a
     android.location.LocationManager locationManager -> b
-    java.lang.String provider -> c
-    java.lang.String provider_gps_network -> d
-    android.location.Location location -> e
-    com.example.scaningthestreet.util.MyLocation myLocation -> f
-    android.location.LocationListener locationListener -> g
-    boolean isEnbled() -> a
-    void exec() -> b
-    boolean isNetworkAvailable(android.content.Context) -> a
-    boolean hasGPSDevice(android.content.Context) -> b
-    void OnOffGps() -> c
-    void NetWorkForArea() -> d
-    void GpsForArea() -> e
-    void setMyLocation() -> g
-    com.example.scaningthestreet.util.MyLocation getMyLocation() -> f
+    android.location.Location location -> c
+    com.example.scaningthestreet.util.MyLocation myLocation -> d
+    android.location.LocationListener locationListener -> e
+    void setMyLocation() -> a
     void access$0(com.example.scaningthestreet.util.LocationUtil) -> a
 com.example.scaningthestreet.util.LocationUtil$1 -> com.example.a.a.b:
     com.example.scaningthestreet.util.LocationUtil this$0 -> a
@@ -1784,44 +2658,58 @@ com.example.scaningthestreet.util.MyLocation -> com.example.a.a.c:
 com.example.scanningthestreet.AppContext -> com.example.scanningthestreet.AppContext:
     void onCreate() -> onCreate
 com.example.scanningthestreet.MainActivity -> com.example.scanningthestreet.MainActivity:
-    android.widget.EditText mEditTextShi -> c
-    android.widget.EditText mEditTextXian -> d
-    android.widget.EditText mEditTextJieDao -> e
-    android.widget.EditText mEditTextMingChen -> f
-    android.widget.EditText mEditTextMiaoShu -> g
-    android.widget.TextView mTextViewJinDu -> h
-    android.widget.TextView mTextViewWeiDu -> i
-    android.widget.TextView mTextViewCoordinateStatus -> j
-    android.widget.Button mButtonBaoChun -> k
-    android.widget.Button mButtonQuXiao -> l
-    android.widget.ImageButton mImageButtonPaiZhao -> m
-    com.example.scaningthestreet.util.LocationUtil locationUtil -> n
-    com.example.scaningthestreet.util.MyLocation location -> o
-    com.example.scaningthestreet.util.MyLocation BaiDuLocation -> p
-    com.baidu.mapapi.search.geocode.GeoCoder mSearch -> q
-    com.example.scanningthestreet.struct.AddressDetail mAddressDetail -> r
-    com.example.scanningthestreet.SelectPicPopupWindow menuWindow -> s
-    android.os.Handler mHandler -> a
-    android.view.View$OnClickListener itemsOnClick -> t
-    android.content.BroadcastReceiver receiver -> b
+    android.widget.EditText mEditTextShi -> d
+    android.widget.EditText mEditTextXian -> e
+    android.widget.EditText mEditTextJieDao -> f
+    android.widget.EditText mEditTextMingChen -> g
+    android.widget.EditText mEditTextMiaoShu -> h
+    android.widget.TextView mTextViewJinDu -> i
+    android.widget.TextView mTextViewWeiDu -> j
+    android.widget.TextView mTextViewCoordinateStatus -> k
+    android.widget.Button mButtonBaoChun -> l
+    android.widget.Button mButtonQuXiao -> m
+    android.widget.ImageButton mImageButtonPaiZhao -> n
+    com.example.scaningthestreet.util.LocationUtil locationUtil -> o
+    com.example.scaningthestreet.util.MyLocation myLocation -> p
+    com.example.scaningthestreet.util.MyLocation BaiDuLocation -> q
+    com.baidu.mapapi.search.geocode.GeoCoder mSearch -> r
+    com.example.scanningthestreet.struct.AddressDetail mAddressDetail -> s
+    com.example.scanningthestreet.SelectPicPopupWindow menuWindow -> t
+    com.baidu.location.LocationClient mLocClient -> u
+    com.example.scanningthestreet.MainActivity$MyLocationListenner myListener -> a
+    java.lang.String mPictureName -> v
+    java.lang.String mCurrentAddress -> w
+    android.os.Handler mHandler -> b
+    android.view.View$OnClickListener itemsOnClick -> x
+    android.content.BroadcastReceiver receiver -> c
+    void locationInit() -> a
     void onCreate(android.os.Bundle) -> onCreate
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     void onGetGeoCodeResult(com.baidu.mapapi.search.geocode.GeoCodeResult) -> a
     void onGetReverseGeoCodeResult(com.baidu.mapapi.search.geocode.ReverseGeoCodeResult) -> a
+    void writeFile(java.lang.String) -> a
     void onClick(android.view.View) -> onClick
-    void showPictureContent() -> a
+    void showPictureContent() -> b
     void onActivityResult(int,int,android.content.Intent) -> onActivityResult
     void onDestroy() -> onDestroy
-    android.widget.TextView access$0(com.example.scanningthestreet.MainActivity) -> a
-    android.widget.EditText access$1(com.example.scanningthestreet.MainActivity) -> b
-    com.example.scanningthestreet.struct.AddressDetail access$2(com.example.scanningthestreet.MainActivity) -> c
+    android.widget.EditText access$0(com.example.scanningthestreet.MainActivity) -> a
+    com.example.scanningthestreet.struct.AddressDetail access$1(com.example.scanningthestreet.MainActivity) -> b
+    android.widget.EditText access$2(com.example.scanningthestreet.MainActivity) -> c
     android.widget.EditText access$3(com.example.scanningthestreet.MainActivity) -> d
-    android.widget.EditText access$4(com.example.scanningthestreet.MainActivity) -> e
-    android.widget.TextView access$5(com.example.scanningthestreet.MainActivity) -> f
-    com.example.scaningthestreet.util.MyLocation access$6(com.example.scanningthestreet.MainActivity) -> g
+    android.widget.TextView access$4(com.example.scanningthestreet.MainActivity) -> e
+    com.example.scaningthestreet.util.MyLocation access$5(com.example.scanningthestreet.MainActivity) -> f
+    android.widget.TextView access$6(com.example.scanningthestreet.MainActivity) -> g
     android.widget.TextView access$7(com.example.scanningthestreet.MainActivity) -> h
-    com.example.scanningthestreet.SelectPicPopupWindow access$8(com.example.scanningthestreet.MainActivity) -> i
-    void access$9(com.example.scanningthestreet.MainActivity) -> j
+    android.widget.EditText access$8(com.example.scanningthestreet.MainActivity) -> i
+    android.widget.EditText access$9(com.example.scanningthestreet.MainActivity) -> j
+    java.lang.String access$10(com.example.scanningthestreet.MainActivity) -> k
+    java.lang.String access$11(com.example.scanningthestreet.MainActivity) -> l
+    void access$12(com.example.scanningthestreet.MainActivity,java.lang.String) -> a
+    void access$13(com.example.scanningthestreet.MainActivity,java.lang.String) -> b
+    com.example.scanningthestreet.SelectPicPopupWindow access$14(com.example.scanningthestreet.MainActivity) -> m
+    void access$15(com.example.scanningthestreet.MainActivity) -> n
+    com.example.scaningthestreet.util.MyLocation access$16(com.example.scanningthestreet.MainActivity) -> o
+    com.baidu.mapapi.search.geocode.GeoCoder access$17(com.example.scanningthestreet.MainActivity) -> p
 com.example.scanningthestreet.MainActivity$1 -> com.example.scanningthestreet.a:
     com.example.scanningthestreet.MainActivity this$0 -> a
     void handleMessage(android.os.Message) -> handleMessage
@@ -1831,16 +2719,26 @@ com.example.scanningthestreet.MainActivity$2 -> com.example.scanningthestreet.b:
 com.example.scanningthestreet.MainActivity$3 -> com.example.scanningthestreet.c:
     com.example.scanningthestreet.MainActivity this$0 -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.example.scanningthestreet.SelectPicPopupWindow -> com.example.scanningthestreet.d:
+com.example.scanningthestreet.MainActivity$4 -> com.example.scanningthestreet.d:
+    com.example.scanningthestreet.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.example.scanningthestreet.MainActivity$5 -> com.example.scanningthestreet.e:
+    com.example.scanningthestreet.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.example.scanningthestreet.MainActivity$MyLocationListenner -> com.example.scanningthestreet.f:
+    com.example.scanningthestreet.MainActivity this$0 -> a
+    void onReceiveLocation(com.baidu.location.BDLocation) -> a
+    void onReceivePoi(com.baidu.location.BDLocation) -> b
+com.example.scanningthestreet.SelectPicPopupWindow -> com.example.scanningthestreet.g:
     android.widget.Button btn_take_photo -> a
     android.widget.Button btn_pick_photo -> b
     android.widget.Button btn_cancel -> c
     android.view.View mMenuView -> d
     android.view.View access$0(com.example.scanningthestreet.SelectPicPopupWindow) -> a
-com.example.scanningthestreet.SelectPicPopupWindow$1 -> com.example.scanningthestreet.e:
+com.example.scanningthestreet.SelectPicPopupWindow$1 -> com.example.scanningthestreet.h:
     com.example.scanningthestreet.SelectPicPopupWindow this$0 -> a
     void onClick(android.view.View) -> onClick
-com.example.scanningthestreet.SelectPicPopupWindow$2 -> com.example.scanningthestreet.f:
+com.example.scanningthestreet.SelectPicPopupWindow$2 -> com.example.scanningthestreet.i:
     com.example.scanningthestreet.SelectPicPopupWindow this$0 -> a
     boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
 com.example.scanningthestreet.struct.AddressDetail -> com.example.scanningthestreet.a.a:

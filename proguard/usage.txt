@@ -902,6 +902,232 @@ com.baidu.lbsapi.auth.j:
     public void a()
     public void b()
     public void c()
+com.baidu.location.BDLocation:
+    public static final int TypeNone
+    public static final int TypeGpsLocation
+    public static final int TypeCriteriaException
+    public static final int TypeNetWorkException
+    public static final int TypeOffLineLocation
+    public static final int TypeOffLineLocationFail
+    public static final int TypeOffLineLocationNetworkFail
+    public static final int TypeNetWorkLocation
+    public static final int TypeCacheLocation
+    public static final int TypeServerError
+    public BDLocation(double,double,float)
+    public BDLocation(java.lang.String,double,double,float,java.lang.String,java.lang.String)
+    public java.lang.String toJsonString()
+    public boolean isCellChangeFlag()
+    public java.lang.String getTime()
+    public double getAltitude()
+    public void setAltitude(double)
+    public float getSpeed()
+    public java.lang.String getCoorType()
+    public void setCoorType(java.lang.String)
+    public boolean hasAltitude()
+    public boolean hasSpeed()
+    public boolean hasRadius()
+    public com.baidu.location.BDLocation toNewLocation(java.lang.String)
+    public int getSatelliteNumber()
+    public float getDerect()
+    public boolean hasSateNumber()
+    public boolean hasPoi()
+    public java.lang.String getPoi()
+    public boolean hasAddr()
+    public java.lang.String getAddrStr()
+    public java.lang.String getProvince()
+    public java.lang.String getCity()
+    public java.lang.String getCityCode()
+    public java.lang.String getDistrict()
+    public java.lang.String getStreet()
+    public java.lang.String getStreetNumber()
+com.baidu.location.BDNotifyListener:
+    public void SetNotifyLocation(double,double,float,java.lang.String)
+com.baidu.location.Jni:
+    Jni()
+com.baidu.location.LocationClient:
+    private static final java.lang.String for
+    private static final int try
+    private static final int p
+    private static final int void
+    private static final int B
+    private static final int m
+    private static final int o
+    private static final int h
+    private static final int b
+    private static final int f
+    private static final int if
+    private static final int y
+    private static final int n
+    private static final int goto
+    private static final int s
+    public LocationClient(android.content.Context,com.baidu.location.LocationClientOption)
+    public com.baidu.location.LocationClientOption getLocOption()
+    public boolean updateLocation(android.location.Location)
+    public int requestOfflineLocation()
+    public int requestLocation()
+    public int requestPoi()
+    public com.baidu.location.BDLocation getLastKnownLocation()
+    public java.lang.String getVersion()
+    public void registerNotify(com.baidu.location.BDNotifyListener)
+    public void removeNotifyEvent(com.baidu.location.BDNotifyListener)
+    public void setTestUrl(java.lang.String)
+    public void setForBaiduMap(boolean)
+    public void setForPreImport(boolean)
+com.baidu.location.LocationClientOption:
+    public static final int MIN_SCAN_SPAN
+    public static final int GpsFirst
+    public static final int NetWorkFirst
+    public java.lang.String getCoorType()
+    public java.lang.String getAddrType()
+    public void setAddrType(java.lang.String)
+    public boolean isOpenGps()
+    public boolean isLocationNotify()
+    public void setLocationNotify(boolean)
+    public int getScanSpan()
+    public int getTimeOut()
+    public void setTimeOut(int)
+    public java.lang.String getProdName()
+    public void setProdName(java.lang.String)
+    public int getPriority()
+    public void setPriority(int)
+    public java.lang.String getServiceName()
+    public void setServiceName(java.lang.String)
+    public void setPoiDistance(float)
+    public float getPoiDistance()
+    public void setPoiNumber(int)
+    public int getPoiNumber()
+    public void setPoiExtraInfo(boolean)
+    public boolean getPoiExtranInfo()
+    public void disableCache(boolean)
+com.baidu.location.a:
+    public void if()
+com.baidu.location.a$a:
+    public void a()
+com.baidu.location.b:
+    private static final java.lang.String if
+    private static final int q
+    private static final int x
+    private static final int n
+    private static final int goto
+    private static final double else
+    private static final int l
+    private static final int h
+    private static final int z
+    private static final int t
+    private static final int K
+    private static final int i
+    private static final int E
+    private static final int void
+    public java.lang.String try()
+com.baidu.location.b$c:
+    public static final java.lang.String g
+    public static final java.lang.String if
+    public static final java.lang.String int
+    public static final java.lang.String for
+    public boolean char()
+    public boolean i()
+    public boolean h()
+    public boolean long()
+    public int g()
+    public java.lang.String int()
+    public char new()
+    public int f()
+    public double for()
+    public java.lang.String byte()
+    public int m()
+    public java.util.List do()
+    public java.lang.String n()
+    public java.lang.String k()
+    public java.lang.String e()
+    public java.util.List else()
+com.baidu.location.b$c$a:
+    public int for()
+com.baidu.location.b$d:
+    public boolean for()
+    public int a()
+    public boolean if()
+    public void a(boolean)
+com.baidu.location.c:
+    public java.lang.String int()
+    public java.lang.String for()
+com.baidu.location.c$a:
+    public c$a(com.baidu.location.c,int,int,int,int,char)
+com.baidu.location.d
+com.baidu.location.e:
+    private static final int byte
+com.baidu.location.f:
+    public static final java.lang.String v
+    static final float an
+    static final int l
+    static final int c
+    static final int long
+    static final int af
+    static final int g
+    static final int Y
+    static final int for
+    static final int s
+    static final int w
+    static final int U
+    static final int H
+    static final int K
+    static final int do
+    static final int int
+    static final int p
+    static final int case
+    static final int ae
+    static final int z
+    static final int F
+    static final int ap
+    static final int S
+    static final int i
+    static final int ai
+    static final int C
+    static final int ao
+    static final int L
+    static final int b
+    static final int J
+    static final int e
+    static final int void
+    static final int T
+    static final int t
+    static final int am
+    static final int Q
+    static final int x
+    static final int else
+    static final int ag
+    private static final int ar
+    private static final int byte
+    private static final int ad
+com.baidu.location.f$c:
+    public static final java.lang.String for
+    public void int()
+com.baidu.location.g:
+    private static final int byte
+    private static final int case
+    public static final int m
+    private static final int h
+    g()
+    public static boolean for(android.content.Context)
+com.baidu.location.h
+com.baidu.location.h$a
+com.baidu.location.i:
+    public static final java.lang.String new
+    public void a(com.baidu.location.BDNotifyListener)
+com.baidu.location.j:
+    j()
+    static java.lang.String if()
+    public static void if(java.lang.String)
+    public static void do(java.lang.String)
+com.baidu.location.j$a:
+    private static final boolean a
+com.baidu.location.j$b:
+    private static final java.lang.String if
+    private static final java.lang.String do
+    private static final java.lang.String for
+    private static final java.lang.String a
+    private j$b()
+com.baidu.location.k:
+    k()
 com.baidu.mapapi.SDKInitializer:
     public static final java.lang.String SDK_BROADTCAST_ACTION_STRING_PERMISSION_CHECK_ERROR
     public static final java.lang.String SDK_BROADCAST_ACTION_STRING_NETWORK_ERROR
@@ -1035,6 +1261,7 @@ com.baidu.mapapi.search.core.TaxiInfo
 com.baidu.mapapi.search.core.VehicleInfo
 com.baidu.mapapi.search.geocode.GeoCodeOption
 com.baidu.mapapi.search.geocode.GeoCodeResult:
+    public com.baidu.mapapi.model.LatLng getLocation()
     public java.lang.String getAddress()
 com.baidu.mapapi.search.geocode.GeoCoder:
     public boolean geocode(com.baidu.mapapi.search.geocode.GeoCodeOption)
@@ -1287,12 +1514,26 @@ com.example.logic.ImgsActivity:
 com.example.logic.ImgsActivity$BottomImgIcon
 com.example.logic.ImgsAdapter:
     51:52:public void setIndex(int)
+com.example.scaningthestreet.util.LocationUtil:
+    private java.lang.String provider
+    private java.lang.String provider_gps_network
+    37:51:public boolean isEnbled()
+    59:87:public void exec()
+    91:105:public boolean isNetworkAvailable(android.content.Context)
+    110:117:public boolean hasGPSDevice(android.content.Context)
+    122:132:public void OnOffGps()
+    136:143:public void NetWorkForArea()
+    147:154:public void GpsForArea()
+    182:182:public com.example.scaningthestreet.util.MyLocation getMyLocation()
 com.example.scanningthestreet.AppContext:
     public android.content.Intent GuiJiServiceIntent
 com.example.scanningthestreet.BuildConfig
 com.example.scanningthestreet.MainActivity:
     public static final int HANDLE_COORDINATE
     public static final int HANDLE_ADDRESS
+    public static final int HANDLE_PHONELUJIN
+    public static final int HANDLE_BAOCUN
+    public static final int HANDLE_CANCEL
     public static final int RESULT_PHOTO
     private static final int SELECT_PICTURE
     public static final java.lang.String SHOW_PICTURE

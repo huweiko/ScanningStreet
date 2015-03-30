@@ -62,6 +62,11 @@ android.support.v4.widget.SlidingPaneLayout: void setShadowDrawable(android.grap
 android.support.v4.widget.SlidingPaneLayout: void setShadowResource(int)
 android.support.v4.widget.SlidingPaneLayout$SavedState
 android.support.v4.widget.SlidingPaneLayout$SavedState: android.os.Parcelable$Creator CREATOR
+com.baidu.location.Jni
+com.baidu.location.Jni: java.lang.String a(byte[],int)
+com.baidu.location.Jni: java.lang.String b(double,double,int,int)
+com.baidu.location.f
+com.baidu.location.f: f()
 com.baidu.mapapi.map.MapView: com.baidu.mapapi.map.BaiduMap getMap()
 com.baidu.mapapi.map.MapViewLayoutParams$ELayoutMode: com.baidu.mapapi.map.MapViewLayoutParams$ELayoutMode[] values()
 com.baidu.mapapi.map.MapViewLayoutParams$ELayoutMode: com.baidu.mapapi.map.MapViewLayoutParams$ELayoutMode valueOf(java.lang.String)

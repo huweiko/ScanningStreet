@@ -6,19 +6,20 @@
 	android:orientation="vertical"
     android:background="@color/alarm_gray_color">
 
-	<FrameLayout 
+	<LinearLayout 
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_weight="0.4">
-	<ImageButton 
-		android:id="@+id/ImageButtonPaiZhao" 
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_gravity="right"
-		android:padding="5dp"
-		android:background="@color/transparent"
-		android:src="@drawable/take_pictures"
-		/>
+	    android:orientation="vertical"
+	    android:layout_weight="0.2">
+		<ImageButton 
+			android:id="@+id/ImageButtonPaiZhao" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:padding="5dp"
+			android:background="@color/transparent"
+			android:src="@drawable/take_pictures"
+			/>
 	    <LinearLayout 
 	        android:layout_width="match_parent"
 	        android:layout_height="80dp"
@@ -79,7 +80,7 @@
 		            android:text="纬度"/>
 		    </RelativeLayout>
    		</LinearLayout>
-	</FrameLayout>
+	</LinearLayout>
 	<LinearLayout 
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
@@ -220,9 +221,9 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:textColor="@color/black"
-	        android:text="状态"
+	        android:text="照片地址"
 	        android:textSize="19sp"
-	        android:visibility="gone"/>
+	        android:visibility="visible"/>
 	</LinearLayout>
 	<LinearLayout 
 	    android:layout_width="match_parent"

@@ -54,6 +54,21 @@
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
+        <receiver android:name="com.example.methanal.util.MediaButtonDisabler">  
+
+  			<intent-filter >  
+
+        		<action android:name="android.intent.action.MEDIA_BUTTON"></action>  
+
+  			</intent-filter>  
+
+		</receiver>  
+		<!-- 定位后台服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
     </application>
 
 </manifest>

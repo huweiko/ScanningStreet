@@ -1,8 +1,14 @@
+# view AndroidManifest.xml #generated:67
+-keep class com.baidu.location.f { <init>(...); }
+
 # view AndroidManifest.xml #generated:47
 -keep class com.example.logic.ImgFileListActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:52
 -keep class com.example.logic.ImgsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.example.methanal.util.MediaButtonDisabler { <init>(...); }
 
 # view AndroidManifest.xml #generated:29
 -keep class com.example.scanningthestreet.AppContext { <init>(...); }
