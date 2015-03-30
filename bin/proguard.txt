@@ -1,0 +1,15 @@
+# view AndroidManifest.xml #generated:47
+-keep class com.example.logic.ImgFileListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.example.logic.ImgsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.example.scanningthestreet.AppContext { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.example.scanningthestreet.MainActivity { <init>(...); }
+
+# onClick res/layout/photogrally.xml #generated:12
+-keepclassmembers class * { *** tobreak(...); }
+
