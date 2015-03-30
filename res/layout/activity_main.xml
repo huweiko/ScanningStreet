@@ -16,13 +16,13 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_gravity="right"
-			android:padding="5dp"
+			android:padding="2dp"
 			android:background="@color/transparent"
 			android:src="@drawable/take_pictures"
 			/>
 	    <LinearLayout 
 	        android:layout_width="match_parent"
-	        android:layout_height="80dp"
+	        android:layout_height="70dp"
 	        android:orientation="horizontal"
 	        android:layout_gravity="center_vertical">
 	        <RelativeLayout 

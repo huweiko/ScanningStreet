@@ -1,6 +1,4 @@
-android.support.v4.app.ActivityCompatHoneycomb -> android.support.v4.app.a:
-    void invalidateOptionsMenu(android.app.Activity) -> a
-android.support.v4.app.BackStackRecord -> android.support.v4.app.b:
+android.support.v4.app.BackStackRecord -> android.support.v4.app.a:
     android.support.v4.app.FragmentManagerImpl mManager -> a
     android.support.v4.app.BackStackRecord$Op mHead -> b
     android.support.v4.app.BackStackRecord$Op mTail -> c
@@ -21,20 +19,17 @@ android.support.v4.app.BackStackRecord -> android.support.v4.app.b:
     int mBreadCrumbShortTitleRes -> r
     java.lang.CharSequence mBreadCrumbShortTitleText -> s
     java.lang.String toString() -> toString
-    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void dump$ec96877(java.lang.String,java.io.PrintWriter) -> a
     void dump(java.lang.String,java.io.PrintWriter,boolean) -> a
     void addOp(android.support.v4.app.BackStackRecord$Op) -> a
     android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
-    void doAddOp(int,android.support.v4.app.Fragment,java.lang.String,int) -> a
     android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment) -> a
     android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment) -> b
     void bumpBackStackNesting(int) -> a
     int commit() -> a
-    int commitInternal(boolean) -> a
     void run() -> run
-    void popFromBackStack(boolean) -> b
-    java.lang.String getName() -> b
-android.support.v4.app.BackStackRecord$Op -> android.support.v4.app.c:
+    void popFromBackStack$1385ff() -> b
+android.support.v4.app.BackStackRecord$Op -> android.support.v4.app.b:
     android.support.v4.app.BackStackRecord$Op next -> a
     android.support.v4.app.BackStackRecord$Op prev -> b
     int cmd -> c
@@ -58,9 +53,7 @@ android.support.v4.app.BackStackState -> android.support.v4.app.BackStackState:
     android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
     int describeContents() -> describeContents
     void writeToParcel(android.os.Parcel,int) -> writeToParcel
-android.support.v4.app.BackStackState$1 -> android.support.v4.app.d:
-    android.support.v4.app.BackStackState createFromParcel(android.os.Parcel) -> a
-    android.support.v4.app.BackStackState[] newArray(int) -> a
+android.support.v4.app.BackStackState$1 -> android.support.v4.app.c:
     java.lang.Object[] newArray(int) -> newArray
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
 android.support.v4.app.Fragment -> android.support.v4.app.Fragment:
@@ -108,79 +101,59 @@ android.support.v4.app.Fragment -> android.support.v4.app.Fragment:
     boolean mCheckedForLoaderManager -> O
     android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
     android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
-    void restoreViewState(android.os.Bundle) -> a
+    void restoreViewState$79e5e33f() -> a
     void setIndex(int,android.support.v4.app.Fragment) -> a
-    boolean isInBackStack() -> a
+    boolean isInBackStack() -> b
     boolean equals(java.lang.Object) -> equals
     int hashCode() -> hashCode
     java.lang.String toString() -> toString
-    android.support.v4.app.FragmentActivity getActivity() -> b
     android.content.res.Resources getResources() -> c
     boolean isDetached() -> d
-    void onHiddenChanged(boolean) -> a
-    void onActivityResult(int,int,android.content.Intent) -> a
-    android.view.LayoutInflater getLayoutInflater(android.os.Bundle) -> b
-    void onInflate(android.app.Activity,android.util.AttributeSet,android.os.Bundle) -> a
-    void onAttach(android.app.Activity) -> a
-    android.view.animation.Animation onCreateAnimation(int,boolean,int) -> a
-    void onCreate(android.os.Bundle) -> c
-    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
-    void onViewCreated(android.view.View,android.os.Bundle) -> a
-    void onActivityCreated(android.os.Bundle) -> d
-    void onViewStateRestored(android.os.Bundle) -> e
-    void onStart() -> e
-    void onResume() -> f
-    void onSaveInstanceState(android.os.Bundle) -> f
+    void onHiddenChanged$1385ff() -> e
+    void onActivityResult$6eb84b52() -> f
+    android.view.LayoutInflater getLayoutInflater$2ee30c11() -> g
+    void onInflate$423a76cd() -> h
+    void onAttach$63a22f9() -> i
+    android.view.animation.Animation onCreateAnimation$24236ca7() -> j
+    void onViewCreated$65f1d89() -> k
     void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
-    void onPause() -> g
-    void onStop() -> h
     void onLowMemory() -> onLowMemory
-    void onDestroyView() -> i
-    void onDestroy() -> j
-    void initState() -> k
-    void onDetach() -> l
-    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
-    void onPrepareOptionsMenu(android.view.Menu) -> a
-    void onDestroyOptionsMenu() -> m
-    boolean onOptionsItemSelected(android.view.MenuItem) -> a
-    void onOptionsMenuClosed(android.view.Menu) -> b
+    void initState() -> l
+    void onDetach() -> m
+    void onDestroyOptionsMenu() -> n
     void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
-    boolean onContextItemSelected(android.view.MenuItem) -> b
     void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
-    void instantiateChildFragmentManager() -> n
-    void performCreate(android.os.Bundle) -> g
-    android.view.View performCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> b
-    void performActivityCreated(android.os.Bundle) -> h
-    void performStart() -> o
-    void performResume() -> p
+    void performCreate(android.os.Bundle) -> a
+    android.view.View performCreateView$469ccb8a() -> o
+    void performActivityCreated$79e5e33f() -> p
+    void performStart() -> q
+    void performResume() -> r
     void performConfigurationChanged(android.content.res.Configuration) -> a
-    void performLowMemory() -> q
-    boolean performCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> b
-    boolean performPrepareOptionsMenu(android.view.Menu) -> c
-    boolean performOptionsItemSelected(android.view.MenuItem) -> c
-    boolean performContextItemSelected(android.view.MenuItem) -> d
-    void performOptionsMenuClosed(android.view.Menu) -> d
-    void performSaveInstanceState(android.os.Bundle) -> i
-    void performPause() -> r
-    void performStop() -> s
-    void performReallyStop() -> t
-    void performDestroyView() -> u
-    void performDestroy() -> v
-android.support.v4.app.Fragment$1 -> android.support.v4.app.e:
+    void performLowMemory() -> s
+    boolean performCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean performPrepareOptionsMenu(android.view.Menu) -> a
+    boolean performOptionsItemSelected(android.view.MenuItem) -> a
+    boolean performContextItemSelected(android.view.MenuItem) -> b
+    void performOptionsMenuClosed(android.view.Menu) -> b
+    void performSaveInstanceState(android.os.Bundle) -> b
+    void performPause() -> t
+    void performStop() -> u
+    void performReallyStop() -> v
+    void performDestroyView() -> w
+    void performDestroy() -> x
+android.support.v4.app.Fragment$1 -> android.support.v4.app.d:
     android.support.v4.app.Fragment this$0 -> a
     android.view.View findViewById(int) -> a
-android.support.v4.app.Fragment$InstantiationException -> android.support.v4.app.f:
+android.support.v4.app.Fragment$InstantiationException -> android.support.v4.app.e:
 android.support.v4.app.Fragment$SavedState -> android.support.v4.app.Fragment$SavedState:
     android.os.Bundle mState -> a
     android.os.Parcelable$Creator CREATOR -> CREATOR
     int describeContents() -> describeContents
     void writeToParcel(android.os.Parcel,int) -> writeToParcel
-android.support.v4.app.Fragment$SavedState$1 -> android.support.v4.app.g:
-    android.support.v4.app.Fragment$SavedState createFromParcel(android.os.Parcel) -> a
-    android.support.v4.app.Fragment$SavedState[] newArray(int) -> a
+android.support.v4.app.Fragment$SavedState$1 -> android.support.v4.app.f:
     java.lang.Object[] newArray(int) -> newArray
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
-android.support.v4.app.FragmentActivity -> android.support.v4.app.h:
+android.support.v4.app.FragmentActivity -> android.support.v4.app.g:
     android.os.Handler mHandler -> a
     android.support.v4.app.FragmentManagerImpl mFragments -> b
     android.support.v4.app.FragmentContainer mContainer -> c
@@ -209,40 +182,35 @@ android.support.v4.app.FragmentActivity -> android.support.v4.app.h:
     void onNewIntent(android.content.Intent) -> onNewIntent
     void onResume() -> onResume
     void onPostResume() -> onPostResume
-    void onResumeFragments() -> a
     boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
     java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
     void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
     void onStart() -> onStart
     void onStop() -> onStop
-    java.lang.Object onRetainCustomNonConfigurationInstance() -> b
-    void supportInvalidateOptionsMenu() -> c
+    void supportInvalidateOptionsMenu() -> a
     void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
     java.lang.String viewToString(android.view.View) -> a
     void dumpViewHierarchy(java.lang.String,java.io.PrintWriter,android.view.View) -> a
     void doReallyStop(boolean) -> a
-    void onReallyStop() -> d
-    void onAttachFragment(android.support.v4.app.Fragment) -> a
+    void onAttachFragment$65850823() -> b
     void startActivityForResult(android.content.Intent,int) -> startActivityForResult
     void invalidateSupportFragment(java.lang.String) -> a
-    android.support.v4.app.LoaderManagerImpl getLoaderManager(java.lang.String,boolean,boolean) -> a
-android.support.v4.app.FragmentActivity$FragmentTag -> android.support.v4.app.i:
+    android.support.v4.app.LoaderManagerImpl getLoaderManager$2cd5ab55(java.lang.String) -> b
+android.support.v4.app.FragmentActivity$FragmentTag -> android.support.v4.app.h:
     int[] Fragment -> a
-android.support.v4.app.FragmentActivity$NonConfigurationInstances -> android.support.v4.app.j:
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> android.support.v4.app.i:
     java.lang.Object activity -> a
     java.lang.Object custom -> b
     java.util.HashMap children -> c
     java.util.ArrayList fragments -> d
     java.util.HashMap loaders -> e
-android.support.v4.app.FragmentContainer -> android.support.v4.app.k:
+android.support.v4.app.FragmentContainer -> android.support.v4.app.j:
     android.view.View findViewById(int) -> a
-android.support.v4.app.FragmentManager -> android.support.v4.app.l:
+android.support.v4.app.FragmentManager -> android.support.v4.app.k:
     android.support.v4.app.FragmentTransaction beginTransaction() -> a
     boolean executePendingTransactions() -> b
     android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
-android.support.v4.app.FragmentManager$OnBackStackChangedListener -> android.support.v4.app.m:
-    void onBackStackChanged() -> a
-android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.n:
+android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.l:
     boolean DEBUG -> a
     boolean HONEYCOMB -> b
     java.util.ArrayList mPendingActions -> c
@@ -276,21 +244,17 @@ android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.n:
     android.support.v4.app.FragmentTransaction beginTransaction() -> a
     boolean executePendingTransactions() -> b
     boolean popBackStackImmediate() -> c
-    void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment) -> a
     android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
     java.lang.String toString() -> toString
     void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
-    android.view.animation.Animation makeOpenCloseAnimation(android.content.Context,float,float,float,float) -> a
-    android.view.animation.Animation makeFadeAnimation(android.content.Context,float,float) -> a
+    android.view.animation.Animation makeOpenCloseAnimation$376f30fd(float,float,float,float) -> a
+    android.view.animation.Animation makeFadeAnimation$424ea1bd(float,float) -> a
     android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
-    void performPendingDeferredStart(android.support.v4.app.Fragment) -> a
     void moveToState(android.support.v4.app.Fragment,int,int,int,boolean) -> a
-    void moveToState(android.support.v4.app.Fragment) -> b
-    void moveToState(int,boolean) -> a
+    void moveToState(android.support.v4.app.Fragment) -> a
+    void moveToState$2563266(int) -> d
     void moveToState(int,int,int,boolean) -> a
-    void startPendingDeferredFragments() -> d
-    void makeActive(android.support.v4.app.Fragment) -> c
-    void makeInactive(android.support.v4.app.Fragment) -> d
+    void startPendingDeferredFragments() -> r
     void addFragment(android.support.v4.app.Fragment,boolean) -> a
     void removeFragment(android.support.v4.app.Fragment,int,int) -> a
     void hideFragment(android.support.v4.app.Fragment,int,int) -> b
@@ -299,44 +263,41 @@ android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.n:
     void attachFragment(android.support.v4.app.Fragment,int,int) -> e
     android.support.v4.app.Fragment findFragmentById(int) -> a
     android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
-    void checkStateLoss() -> t
-    void enqueueAction(java.lang.Runnable,boolean) -> a
+    void checkStateLoss() -> s
+    void enqueueAction$574583f(java.lang.Runnable) -> a
     int allocBackStackIndex(android.support.v4.app.BackStackRecord) -> a
     void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
     void freeBackStackIndex(int) -> b
-    boolean execPendingActions() -> e
-    void reportBackStackChanged() -> f
+    boolean execPendingActions() -> d
+    void reportBackStackChanged() -> t
     void addBackStackState(android.support.v4.app.BackStackRecord) -> b
-    boolean popBackStackState(android.os.Handler,java.lang.String,int,int) -> a
-    java.util.ArrayList retainNonConfig() -> g
-    void saveFragmentViewState(android.support.v4.app.Fragment) -> e
-    android.os.Bundle saveFragmentBasicState(android.support.v4.app.Fragment) -> f
-    android.os.Parcelable saveAllState() -> h
+    java.util.ArrayList retainNonConfig() -> e
+    void saveFragmentViewState(android.support.v4.app.Fragment) -> b
+    android.os.Parcelable saveAllState() -> f
     void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
     void attachActivity(android.support.v4.app.FragmentActivity,android.support.v4.app.FragmentContainer,android.support.v4.app.Fragment) -> a
-    void noteStateNotSaved() -> i
-    void dispatchCreate() -> j
-    void dispatchActivityCreated() -> k
-    void dispatchStart() -> l
-    void dispatchResume() -> m
-    void dispatchPause() -> n
-    void dispatchStop() -> o
-    void dispatchReallyStop() -> p
-    void dispatchDestroyView() -> q
-    void dispatchDestroy() -> r
+    void noteStateNotSaved() -> g
+    void dispatchCreate() -> h
+    void dispatchActivityCreated() -> i
+    void dispatchStart() -> j
+    void dispatchResume() -> k
+    void dispatchPause() -> l
+    void dispatchStop() -> m
+    void dispatchReallyStop() -> n
+    void dispatchDestroyView() -> o
+    void dispatchDestroy() -> p
     void dispatchConfigurationChanged(android.content.res.Configuration) -> a
-    void dispatchLowMemory() -> s
+    void dispatchLowMemory() -> q
     boolean dispatchCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
     boolean dispatchPrepareOptionsMenu(android.view.Menu) -> a
     boolean dispatchOptionsItemSelected(android.view.MenuItem) -> a
     boolean dispatchContextItemSelected(android.view.MenuItem) -> b
     void dispatchOptionsMenuClosed(android.view.Menu) -> b
     int reverseTransit(int) -> c
-    int transitToStyleIndex(int,boolean) -> b
-android.support.v4.app.FragmentManagerImpl$1 -> android.support.v4.app.o:
+android.support.v4.app.FragmentManagerImpl$1 -> android.support.v4.app.m:
     android.support.v4.app.FragmentManagerImpl this$0 -> a
     void run() -> run
-android.support.v4.app.FragmentManagerImpl$5 -> android.support.v4.app.p:
+android.support.v4.app.FragmentManagerImpl$5 -> android.support.v4.app.n:
     android.support.v4.app.Fragment val$fragment -> a
     android.support.v4.app.FragmentManagerImpl this$0 -> b
     void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
@@ -349,9 +310,7 @@ android.support.v4.app.FragmentManagerState -> android.support.v4.app.FragmentMa
     android.os.Parcelable$Creator CREATOR -> CREATOR
     int describeContents() -> describeContents
     void writeToParcel(android.os.Parcel,int) -> writeToParcel
-android.support.v4.app.FragmentManagerState$1 -> android.support.v4.app.q:
-    android.support.v4.app.FragmentManagerState createFromParcel(android.os.Parcel) -> a
-    android.support.v4.app.FragmentManagerState[] newArray(int) -> a
+android.support.v4.app.FragmentManagerState$1 -> android.support.v4.app.o:
     java.lang.Object[] newArray(int) -> newArray
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
 android.support.v4.app.FragmentState -> android.support.v4.app.FragmentState:
@@ -370,9 +329,7 @@ android.support.v4.app.FragmentState -> android.support.v4.app.FragmentState:
     android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity,android.support.v4.app.Fragment) -> a
     int describeContents() -> describeContents
     void writeToParcel(android.os.Parcel,int) -> writeToParcel
-android.support.v4.app.FragmentState$1 -> android.support.v4.app.r:
-    android.support.v4.app.FragmentState createFromParcel(android.os.Parcel) -> a
-    android.support.v4.app.FragmentState[] newArray(int) -> a
+android.support.v4.app.FragmentState$1 -> android.support.v4.app.p:
     java.lang.Object[] newArray(int) -> newArray
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
 android.support.v4.app.FragmentTabHost -> android.support.v4.app.FragmentTabHost:
@@ -391,39 +348,29 @@ android.support.v4.app.FragmentTabHost -> android.support.v4.app.FragmentTabHost
     void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
     void onTabChanged(java.lang.String) -> onTabChanged
     android.support.v4.app.FragmentTransaction doTabChanged(java.lang.String,android.support.v4.app.FragmentTransaction) -> a
-android.support.v4.app.FragmentTabHost$1 -> android.support.v4.app.s:
 android.support.v4.app.FragmentTabHost$SavedState -> android.support.v4.app.FragmentTabHost$SavedState:
     java.lang.String curTab -> a
     android.os.Parcelable$Creator CREATOR -> CREATOR
     void writeToParcel(android.os.Parcel,int) -> writeToParcel
     java.lang.String toString() -> toString
-android.support.v4.app.FragmentTabHost$SavedState$1 -> android.support.v4.app.t:
-    android.support.v4.app.FragmentTabHost$SavedState createFromParcel(android.os.Parcel) -> a
-    android.support.v4.app.FragmentTabHost$SavedState[] newArray(int) -> a
+android.support.v4.app.FragmentTabHost$SavedState$1 -> android.support.v4.app.q:
     java.lang.Object[] newArray(int) -> newArray
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
-android.support.v4.app.FragmentTabHost$TabInfo -> android.support.v4.app.u:
+android.support.v4.app.FragmentTabHost$TabInfo -> android.support.v4.app.r:
     java.lang.String tag -> a
     java.lang.Class clss -> b
     android.os.Bundle args -> c
     android.support.v4.app.Fragment fragment -> d
-    android.support.v4.app.Fragment access$102(android.support.v4.app.FragmentTabHost$TabInfo,android.support.v4.app.Fragment) -> a
-    android.support.v4.app.Fragment access$100(android.support.v4.app.FragmentTabHost$TabInfo) -> a
-    java.lang.String access$200(android.support.v4.app.FragmentTabHost$TabInfo) -> b
-    java.lang.Class access$300(android.support.v4.app.FragmentTabHost$TabInfo) -> c
-    android.os.Bundle access$400(android.support.v4.app.FragmentTabHost$TabInfo) -> d
-android.support.v4.app.FragmentTransaction -> android.support.v4.app.v:
+android.support.v4.app.FragmentTransaction -> android.support.v4.app.s:
     android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
     android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment) -> a
     android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment) -> b
     int commit() -> a
-android.support.v4.app.LoaderManager -> android.support.v4.app.w:
+android.support.v4.app.LoaderManager -> android.support.v4.app.t:
     boolean hasRunningLoaders() -> a
-android.support.v4.app.LoaderManager$LoaderCallbacks -> android.support.v4.app.x:
-    android.support.v4.content.Loader onCreateLoader(int,android.os.Bundle) -> a
-    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
-    void onLoaderReset(android.support.v4.content.Loader) -> a
-android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.y:
+android.support.v4.app.LoaderManager$LoaderCallbacks -> android.support.v4.app.u:
+    android.support.v4.content.Loader onCreateLoader$e57f803() -> a
+android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.v:
     boolean DEBUG -> a
     android.support.v4.util.SparseArrayCompat mLoaders -> b
     android.support.v4.util.SparseArrayCompat mInactiveLoaders -> c
@@ -440,9 +387,9 @@ android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.y:
     void doReportStart() -> g
     void doDestroy() -> h
     java.lang.String toString() -> toString
-    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void dump$ec96877$79f041d6(java.lang.String,java.io.PrintWriter) -> a
     boolean hasRunningLoaders() -> a
-android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.z:
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.w:
     int mId -> a
     android.os.Bundle mArgs -> b
     android.support.v4.app.LoaderManager$LoaderCallbacks mCallbacks -> c
@@ -458,20 +405,16 @@ android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.z:
     boolean mListenerRegistered -> m
     android.support.v4.app.LoaderManagerImpl$LoaderInfo mPendingLoader -> n
     android.support.v4.app.LoaderManagerImpl this$0 -> o
-    void start() -> a
-    void retain() -> b
-    void finishRetain() -> c
-    void reportStart() -> d
-    void stop() -> e
-    void destroy() -> f
+    void stop() -> a
+    void destroy() -> b
     void callOnLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
     java.lang.String toString() -> toString
-    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
-android.support.v4.app.NoSaveStateFrameLayout -> android.support.v4.app.aa:
+    void dump$ec96877$79f041d6(java.lang.String,java.io.PrintWriter) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> android.support.v4.app.x:
     android.view.ViewGroup wrap(android.view.View) -> a
     void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
     void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
-android.support.v4.app.SuperNotCalledException -> android.support.v4.app.ab:
+android.support.v4.app.SuperNotCalledException -> android.support.v4.app.y:
 android.support.v4.content.Loader -> android.support.v4.a.a:
     int mId -> a
     android.support.v4.content.Loader$OnLoadCompleteListener mListener -> b
@@ -479,20 +422,10 @@ android.support.v4.content.Loader -> android.support.v4.a.a:
     boolean mAbandoned -> d
     boolean mReset -> e
     boolean mContentChanged -> f
-    void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
     void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
-    void startLoading() -> a
-    void onStartLoading() -> b
-    void stopLoading() -> c
-    void onStopLoading() -> d
-    void reset() -> e
-    void onReset() -> f
-    java.lang.String dataToString(java.lang.Object) -> a
     java.lang.String toString() -> toString
-    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
 android.support.v4.content.Loader$OnLoadCompleteListener -> android.support.v4.a.b:
 android.support.v4.os.ParcelableCompat -> android.support.v4.b.a:
-    android.os.Parcelable$Creator newCreator(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
 android.support.v4.os.ParcelableCompat$CompatCreator -> android.support.v4.b.b:
     android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
@@ -505,8 +438,6 @@ android.support.v4.os.ParcelableCompatCreatorHoneycombMR2 -> android.support.v4.
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
     java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
     java.lang.Object[] newArray(int) -> newArray
-android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub -> android.support.v4.b.e:
-    android.os.Parcelable$Creator instantiate(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
 android.support.v4.util.DebugUtils -> android.support.v4.c.a:
     void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
 android.support.v4.util.LogWriter -> android.support.v4.c.b:
@@ -527,8 +458,6 @@ android.support.v4.util.SparseArrayCompat -> android.support.v4.c.c:
     int keyAt(int) -> a
     java.lang.Object valueAt(int) -> b
     void clear() -> b
-    int idealByteArraySize(int) -> c
-    int idealIntArraySize(int) -> d
 android.support.v4.view.GravityCompat -> android.support.v4.view.a:
     android.support.v4.view.GravityCompat$GravityCompatImpl IMPL -> a
     int getAbsoluteGravity(int,int) -> a
@@ -538,36 +467,28 @@ android.support.v4.view.GravityCompat$GravityCompatImplBase -> android.support.v
     int getAbsoluteGravity(int,int) -> a
 android.support.v4.view.GravityCompat$GravityCompatImplJellybeanMr1 -> android.support.v4.view.d:
     int getAbsoluteGravity(int,int) -> a
-android.support.v4.view.GravityCompatJellybeanMr1 -> android.support.v4.view.e:
-    int getAbsoluteGravity(int,int) -> a
-android.support.v4.view.KeyEventCompat -> android.support.v4.view.f:
+android.support.v4.view.KeyEventCompat -> android.support.v4.view.e:
     android.support.v4.view.KeyEventCompat$KeyEventVersionImpl IMPL -> a
-    boolean hasModifiers(android.view.KeyEvent,int) -> a
-    boolean hasNoModifiers(android.view.KeyEvent) -> a
-    void startTracking(android.view.KeyEvent) -> b
-android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl -> android.support.v4.view.g:
-    int metaStateFilterDirectionalModifiers(int,int,int,int,int) -> a
+    boolean hasModifiers$79c6ddc0(android.view.KeyEvent) -> a
+    boolean hasNoModifiers(android.view.KeyEvent) -> b
+    void startTracking(android.view.KeyEvent) -> c
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl -> android.support.v4.view.f:
+    int metaStateFilterDirectionalModifiers$2e71581f(int,int,int,int) -> a
     int normalizeMetaState(int) -> a
-    boolean metaStateHasModifiers(int,int) -> a
-    boolean metaStateHasNoModifiers(int) -> b
+    boolean metaStateHasModifiers$255f299(int) -> b
+    boolean metaStateHasNoModifiers(int) -> c
     void startTracking(android.view.KeyEvent) -> a
-android.support.v4.view.KeyEventCompat$EclairKeyEventVersionImpl -> android.support.v4.view.h:
+android.support.v4.view.KeyEventCompat$EclairKeyEventVersionImpl -> android.support.v4.view.g:
     void startTracking(android.view.KeyEvent) -> a
-android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl -> android.support.v4.view.i:
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl -> android.support.v4.view.h:
     int normalizeMetaState(int) -> a
-    boolean metaStateHasModifiers(int,int) -> a
-    boolean metaStateHasNoModifiers(int) -> b
-android.support.v4.view.KeyEventCompat$KeyEventVersionImpl -> android.support.v4.view.j:
-    boolean metaStateHasModifiers(int,int) -> a
-    boolean metaStateHasNoModifiers(int) -> b
+    boolean metaStateHasModifiers$255f299(int) -> b
+    boolean metaStateHasNoModifiers(int) -> c
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl -> android.support.v4.view.i:
+    boolean metaStateHasModifiers$255f299(int) -> b
+    boolean metaStateHasNoModifiers(int) -> c
     void startTracking(android.view.KeyEvent) -> a
-android.support.v4.view.KeyEventCompatEclair -> android.support.v4.view.k:
-    void startTracking(android.view.KeyEvent) -> a
-android.support.v4.view.KeyEventCompatHoneycomb -> android.support.v4.view.l:
-    int normalizeMetaState(int) -> a
-    boolean metaStateHasModifiers(int,int) -> a
-    boolean metaStateHasNoModifiers(int) -> b
-android.support.v4.view.MotionEventCompat -> android.support.v4.view.m:
+android.support.v4.view.MotionEventCompat -> android.support.v4.view.j:
     android.support.v4.view.MotionEventCompat$MotionEventVersionImpl IMPL -> a
     int getActionMasked(android.view.MotionEvent) -> a
     int getActionIndex(android.view.MotionEvent) -> b
@@ -576,67 +497,43 @@ android.support.v4.view.MotionEventCompat -> android.support.v4.view.m:
     float getX(android.view.MotionEvent,int) -> c
     float getY(android.view.MotionEvent,int) -> d
     int getPointerCount(android.view.MotionEvent) -> c
-android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl -> android.support.v4.view.n:
+android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl -> android.support.v4.view.k:
     int findPointerIndex(android.view.MotionEvent,int) -> a
     int getPointerId(android.view.MotionEvent,int) -> b
     float getX(android.view.MotionEvent,int) -> c
     float getY(android.view.MotionEvent,int) -> d
     int getPointerCount(android.view.MotionEvent) -> a
-android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl -> android.support.v4.view.o:
+android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl -> android.support.v4.view.l:
     int findPointerIndex(android.view.MotionEvent,int) -> a
     int getPointerId(android.view.MotionEvent,int) -> b
     float getX(android.view.MotionEvent,int) -> c
     float getY(android.view.MotionEvent,int) -> d
     int getPointerCount(android.view.MotionEvent) -> a
-android.support.v4.view.MotionEventCompat$MotionEventVersionImpl -> android.support.v4.view.p:
+android.support.v4.view.MotionEventCompat$MotionEventVersionImpl -> android.support.v4.view.m:
     int findPointerIndex(android.view.MotionEvent,int) -> a
     int getPointerId(android.view.MotionEvent,int) -> b
     float getX(android.view.MotionEvent,int) -> c
     float getY(android.view.MotionEvent,int) -> d
     int getPointerCount(android.view.MotionEvent) -> a
-android.support.v4.view.MotionEventCompatEclair -> android.support.v4.view.q:
-    int findPointerIndex(android.view.MotionEvent,int) -> a
-    int getPointerId(android.view.MotionEvent,int) -> b
-    float getX(android.view.MotionEvent,int) -> c
-    float getY(android.view.MotionEvent,int) -> d
-    int getPointerCount(android.view.MotionEvent) -> a
-android.support.v4.view.PagerAdapter -> android.support.v4.view.r:
+android.support.v4.view.PagerAdapter -> android.support.v4.view.n:
     android.database.DataSetObservable mObservable -> a
     int getCount() -> a
-    void startUpdate(android.view.ViewGroup) -> a
-    java.lang.Object instantiateItem(android.view.ViewGroup,int) -> a
-    void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> a
-    void setPrimaryItem(android.view.ViewGroup,int,java.lang.Object) -> b
-    void finishUpdate(android.view.ViewGroup) -> b
-    void startUpdate(android.view.View) -> a
-    java.lang.Object instantiateItem(android.view.View,int) -> a
-    void destroyItem(android.view.View,int,java.lang.Object) -> a
-    void setPrimaryItem(android.view.View,int,java.lang.Object) -> b
-    void finishUpdate(android.view.View) -> b
-    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
-    android.os.Parcelable saveState() -> b
-    void restoreState(android.os.Parcelable,java.lang.ClassLoader) -> a
-    int getItemPosition(java.lang.Object) -> a
-    void registerDataSetObserver(android.database.DataSetObserver) -> a
-    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
-    float getPageWidth(int) -> a
-android.support.v4.view.VelocityTrackerCompat -> android.support.v4.view.s:
+    void destroyItem$30510aeb() -> b
+    boolean isViewFromObject$171eb1dd() -> c
+android.support.v4.view.VelocityTrackerCompat -> android.support.v4.view.o:
     android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl IMPL -> a
     float getXVelocity(android.view.VelocityTracker,int) -> a
     float getYVelocity(android.view.VelocityTracker,int) -> b
-android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl -> android.support.v4.view.t:
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl -> android.support.v4.view.p:
     float getXVelocity(android.view.VelocityTracker,int) -> a
     float getYVelocity(android.view.VelocityTracker,int) -> b
-android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl -> android.support.v4.view.u:
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl -> android.support.v4.view.q:
     float getXVelocity(android.view.VelocityTracker,int) -> a
     float getYVelocity(android.view.VelocityTracker,int) -> b
-android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl -> android.support.v4.view.v:
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl -> android.support.v4.view.r:
     float getXVelocity(android.view.VelocityTracker,int) -> a
     float getYVelocity(android.view.VelocityTracker,int) -> b
-android.support.v4.view.VelocityTrackerCompatHoneycomb -> android.support.v4.view.w:
-    float getXVelocity(android.view.VelocityTracker,int) -> a
-    float getYVelocity(android.view.VelocityTracker,int) -> b
-android.support.v4.view.ViewCompat -> android.support.v4.view.x:
+android.support.v4.view.ViewCompat -> android.support.v4.view.s:
     android.support.v4.view.ViewCompat$ViewCompatImpl IMPL -> a
     boolean canScrollHorizontally(android.view.View,int) -> a
     int getOverScrollMode(android.view.View) -> a
@@ -647,7 +544,7 @@ android.support.v4.view.ViewCompat -> android.support.v4.view.x:
     int getLayerType(android.view.View) -> c
     void setLayerPaint(android.view.View,android.graphics.Paint) -> a
     int getLayoutDirection(android.view.View) -> d
-android.support.v4.view.ViewCompat$BaseViewCompatImpl -> android.support.v4.view.y:
+android.support.v4.view.ViewCompat$BaseViewCompatImpl -> android.support.v4.view.t:
     boolean canScrollHorizontally(android.view.View,int) -> a
     int getOverScrollMode(android.view.View) -> a
     void postInvalidateOnAnimation(android.view.View) -> b
@@ -658,23 +555,23 @@ android.support.v4.view.ViewCompat$BaseViewCompatImpl -> android.support.v4.view
     int getLayerType(android.view.View) -> c
     void setLayerPaint(android.view.View,android.graphics.Paint) -> a
     int getLayoutDirection(android.view.View) -> d
-android.support.v4.view.ViewCompat$GBViewCompatImpl -> android.support.v4.view.z:
+android.support.v4.view.ViewCompat$GBViewCompatImpl -> android.support.v4.view.u:
     int getOverScrollMode(android.view.View) -> a
-android.support.v4.view.ViewCompat$HCViewCompatImpl -> android.support.v4.view.aa:
+android.support.v4.view.ViewCompat$HCViewCompatImpl -> android.support.v4.view.v:
     long getFrameTime() -> a
     void setLayerType(android.view.View,int,android.graphics.Paint) -> a
     int getLayerType(android.view.View) -> c
     void setLayerPaint(android.view.View,android.graphics.Paint) -> a
-android.support.v4.view.ViewCompat$ICSViewCompatImpl -> android.support.v4.view.ab:
+android.support.v4.view.ViewCompat$ICSViewCompatImpl -> android.support.v4.view.w:
     boolean canScrollHorizontally(android.view.View,int) -> a
-android.support.v4.view.ViewCompat$JBViewCompatImpl -> android.support.v4.view.ac:
+android.support.v4.view.ViewCompat$JBViewCompatImpl -> android.support.v4.view.x:
     void postInvalidateOnAnimation(android.view.View) -> b
     void postInvalidateOnAnimation(android.view.View,int,int,int,int) -> a
     void postOnAnimation(android.view.View,java.lang.Runnable) -> a
-android.support.v4.view.ViewCompat$JbMr1ViewCompatImpl -> android.support.v4.view.ad:
+android.support.v4.view.ViewCompat$JbMr1ViewCompatImpl -> android.support.v4.view.y:
     void setLayerPaint(android.view.View,android.graphics.Paint) -> a
     int getLayoutDirection(android.view.View) -> d
-android.support.v4.view.ViewCompat$ViewCompatImpl -> android.support.v4.view.ae:
+android.support.v4.view.ViewCompat$ViewCompatImpl -> android.support.v4.view.z:
     boolean canScrollHorizontally(android.view.View,int) -> a
     int getOverScrollMode(android.view.View) -> a
     void postInvalidateOnAnimation(android.view.View) -> b
@@ -684,21 +581,6 @@ android.support.v4.view.ViewCompat$ViewCompatImpl -> android.support.v4.view.ae:
     int getLayerType(android.view.View) -> c
     void setLayerPaint(android.view.View,android.graphics.Paint) -> a
     int getLayoutDirection(android.view.View) -> d
-android.support.v4.view.ViewCompatGingerbread -> android.support.v4.view.af:
-    int getOverScrollMode(android.view.View) -> a
-android.support.v4.view.ViewCompatHC -> android.support.v4.view.ag:
-    long getFrameTime() -> a
-    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
-    int getLayerType(android.view.View) -> a
-android.support.v4.view.ViewCompatICS -> android.support.v4.view.ah:
-    boolean canScrollHorizontally(android.view.View,int) -> a
-android.support.v4.view.ViewCompatJB -> android.support.v4.view.ai:
-    void postInvalidateOnAnimation(android.view.View) -> a
-    void postInvalidateOnAnimation(android.view.View,int,int,int,int) -> a
-    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
-android.support.v4.view.ViewCompatJellybeanMr1 -> android.support.v4.view.aj:
-    void setLayerPaint(android.view.View,android.graphics.Paint) -> a
-    int getLayoutDirection(android.view.View) -> a
 android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
     int[] LAYOUT_ATTRS -> a
     int mExpectedAdapterCount -> b
@@ -761,12 +643,11 @@ android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
     void onDetachedFromWindow() -> onDetachedFromWindow
     void setScrollState(int) -> setScrollState
     void setAdapter(android.support.v4.view.PagerAdapter) -> setAdapter
-    void removeNonDecorViews() -> f
     android.support.v4.view.PagerAdapter getAdapter() -> getAdapter
     void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener) -> setOnAdapterChangeListener
     int getClientWidth() -> getClientWidth
     void setCurrentItem(int) -> setCurrentItem
-    void setCurrentItem(int,boolean) -> a
+    void setCurrentItem$2563266(int) -> setCurrentItem$2563266
     int getCurrentItem() -> getCurrentItem
     void setCurrentItemInternal(int,boolean,boolean) -> a
     void setCurrentItemInternal(int,boolean,boolean,int) -> a
@@ -782,37 +663,32 @@ android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
     void setPageMarginDrawable(int) -> setPageMarginDrawable
     boolean verifyDrawable(android.graphics.drawable.Drawable) -> verifyDrawable
     void drawableStateChanged() -> drawableStateChanged
-    float distanceInfluenceForSnapDuration(float) -> a
-    void smoothScrollTo(int,int,int) -> a
-    android.support.v4.view.ViewPager$ItemInfo addNewItem(int,int) -> a
+    android.support.v4.view.ViewPager$ItemInfo addNewItem$3af7e890(int) -> a
     void dataSetChanged() -> a
-    void populate() -> b
-    void populate(int) -> a
-    void sortChildDrawingOrder() -> g
+    void populate() -> c
+    void populate(int) -> b
+    void sortChildDrawingOrder() -> d
     void calculatePageOffsets(android.support.v4.view.ViewPager$ItemInfo,int,android.support.v4.view.ViewPager$ItemInfo) -> a
     android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
     void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
     void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
     void removeView(android.view.View) -> removeView
-    android.support.v4.view.ViewPager$ItemInfo infoForChild(android.view.View) -> a
-    android.support.v4.view.ViewPager$ItemInfo infoForAnyChild(android.view.View) -> b
-    android.support.v4.view.ViewPager$ItemInfo infoForPosition(int) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForChild$31e08638() -> e
+    android.support.v4.view.ViewPager$ItemInfo infoForAnyChild(android.view.View) -> a
+    android.support.v4.view.ViewPager$ItemInfo infoForPosition(int) -> c
     void onAttachedToWindow() -> onAttachedToWindow
     void onMeasure(int,int) -> onMeasure
     void onSizeChanged(int,int,int,int) -> onSizeChanged
     void recomputeScrollPosition(int,int,int,int) -> a
     void onLayout(boolean,int,int,int,int) -> onLayout
     void computeScroll() -> computeScroll
-    boolean pageScrolled(int) -> d
-    void onPageScrolled(int,float,int) -> a
+    boolean pageScrolled$134632() -> f
+    void onPageScrolled$486775f1() -> g
     void completeScroll(boolean) -> a
-    boolean isGutterDrag(float,float) -> a
-    void enableLayers(boolean) -> b
     boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
     boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
-    boolean performDrag(float) -> b
+    boolean performDrag(float) -> a
     android.support.v4.view.ViewPager$ItemInfo infoForCurrentScrollPosition() -> h
-    int determineTargetPage(int,float,int,int) -> a
     void draw(android.graphics.Canvas) -> draw
     void onDraw(android.graphics.Canvas) -> onDraw
     void onSecondaryPointerUp(android.view.MotionEvent) -> a
@@ -820,11 +696,9 @@ android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
     void setScrollingCacheEnabled(boolean) -> setScrollingCacheEnabled
     boolean canScroll(android.view.View,boolean,int,int,int) -> a
     boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
-    boolean executeKeyEvent(android.view.KeyEvent) -> a
-    boolean arrowScroll(int) -> c
+    boolean arrowScroll(int) -> d
     android.graphics.Rect getChildRectInPagerCoordinates(android.graphics.Rect,android.view.View) -> a
-    boolean pageLeft() -> c
-    boolean pageRight() -> d
+    boolean pageLeft() -> j
     void addFocusables(java.util.ArrayList,int,int) -> addFocusables
     void addTouchables(java.util.ArrayList) -> addTouchables
     boolean onRequestFocusInDescendants(int,android.graphics.Rect) -> onRequestFocusInDescendants
@@ -833,35 +707,29 @@ android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
     android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
     boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
     android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
-    int[] access$400() -> e
-android.support.v4.view.ViewPager$1 -> android.support.v4.view.ak:
-    int compare(android.support.v4.view.ViewPager$ItemInfo,android.support.v4.view.ViewPager$ItemInfo) -> a
+    int[] access$400() -> b
+android.support.v4.view.ViewPager$1 -> android.support.v4.view.aa:
     int compare(java.lang.Object,java.lang.Object) -> compare
-android.support.v4.view.ViewPager$2 -> android.support.v4.view.al:
+android.support.v4.view.ViewPager$2 -> android.support.v4.view.ab:
     float getInterpolation(float) -> getInterpolation
-android.support.v4.view.ViewPager$Decor -> android.support.v4.view.am:
-android.support.v4.view.ViewPager$ItemInfo -> android.support.v4.view.an:
+android.support.v4.view.ViewPager$Decor -> android.support.v4.view.ac:
+android.support.v4.view.ViewPager$ItemInfo -> android.support.v4.view.ad:
     java.lang.Object object -> a
     int position -> b
     boolean scrolling -> c
     float widthFactor -> d
     float offset -> e
-android.support.v4.view.ViewPager$LayoutParams -> android.support.v4.view.ao:
+android.support.v4.view.ViewPager$LayoutParams -> android.support.v4.view.ae:
     boolean isDecor -> a
     int gravity -> b
     float widthFactor -> c
     boolean needsMeasure -> d
     int position -> e
     int childIndex -> f
-android.support.v4.view.ViewPager$OnAdapterChangeListener -> android.support.v4.view.ap:
-    void onAdapterChanged(android.support.v4.view.PagerAdapter,android.support.v4.view.PagerAdapter) -> a
-android.support.v4.view.ViewPager$OnPageChangeListener -> android.support.v4.view.aq:
-    void onPageScrolled(int,float,int) -> a
-    void onPageSelected(int) -> a
-    void onPageScrollStateChanged(int) -> b
-android.support.v4.view.ViewPager$PageTransformer -> android.support.v4.view.ar:
-    void transformPage(android.view.View,float) -> a
-android.support.v4.view.ViewPager$PagerObserver -> android.support.v4.view.as:
+android.support.v4.view.ViewPager$OnAdapterChangeListener -> android.support.v4.view.af:
+android.support.v4.view.ViewPager$OnPageChangeListener -> android.support.v4.view.ag:
+android.support.v4.view.ViewPager$PageTransformer -> android.support.v4.view.ah:
+android.support.v4.view.ViewPager$PagerObserver -> android.support.v4.view.ai:
     android.support.v4.view.ViewPager this$0 -> a
     void onChanged() -> onChanged
     void onInvalidated() -> onInvalidated
@@ -872,13 +740,10 @@ android.support.v4.view.ViewPager$SavedState -> android.support.v4.view.ViewPage
     android.os.Parcelable$Creator CREATOR -> CREATOR
     void writeToParcel(android.os.Parcel,int) -> writeToParcel
     java.lang.String toString() -> toString
-android.support.v4.view.ViewPager$SavedState$1 -> android.support.v4.view.at:
-    android.support.v4.view.ViewPager$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> b
-    android.support.v4.view.ViewPager$SavedState[] newArray(int) -> b
+android.support.v4.view.ViewPager$SavedState$1 -> android.support.v4.view.aj:
     java.lang.Object[] newArray(int) -> a
     java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
-android.support.v4.view.ViewPager$ViewPositionComparator -> android.support.v4.view.au:
-    int compare(android.view.View,android.view.View) -> a
+android.support.v4.view.ViewPager$ViewPositionComparator -> android.support.v4.view.ak:
     int compare(java.lang.Object,java.lang.Object) -> compare
 android.support.v4.widget.DrawerLayout -> android.support.v4.widget.DrawerLayout:
     int[] LAYOUT_ATTRS -> a
@@ -907,52 +772,38 @@ android.support.v4.widget.DrawerLayout -> android.support.v4.widget.DrawerLayout
     void setDrawerLockMode(int) -> setDrawerLockMode
     void setDrawerLockMode(int,int) -> a
     int getDrawerLockMode(android.view.View) -> a
-    void updateDrawerState(int,int,android.view.View) -> a
-    void dispatchOnDrawerClosed(android.view.View) -> b
-    void dispatchOnDrawerOpened(android.view.View) -> c
-    void dispatchOnDrawerSlide(android.view.View,float) -> a
-    void setDrawerViewOffset(android.view.View,float) -> b
-    float getDrawerViewOffset(android.view.View) -> d
+    void updateDrawerState$5cdeb3e3(int,android.view.View) -> a
+    void setDrawerViewOffset(android.view.View,float) -> a
+    float getDrawerViewOffset(android.view.View) -> b
     int getDrawerViewGravity(android.view.View) -> e
     boolean checkDrawerViewGravity(android.view.View,int) -> a
-    android.view.View findOpenDrawer() -> a
     android.view.View findDrawerWithGravity(int) -> a
-    java.lang.String gravityToString(int) -> b
     void onDetachedFromWindow() -> onDetachedFromWindow
     void onAttachedToWindow() -> onAttachedToWindow
     void onMeasure(int,int) -> onMeasure
     void onLayout(boolean,int,int,int,int) -> onLayout
     void requestLayout() -> requestLayout
     void computeScroll() -> computeScroll
-    boolean hasOpaqueBackground(android.view.View) -> k
     boolean drawChild(android.graphics.Canvas,android.view.View,long) -> drawChild
     boolean isContentView(android.view.View) -> f
-    boolean isDrawerView(android.view.View) -> g
+    boolean isDrawerView(android.view.View) -> c
     boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
     boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
     void requestDisallowInterceptTouchEvent(boolean) -> requestDisallowInterceptTouchEvent
-    void closeDrawers() -> b
     void closeDrawers(boolean) -> a
-    void openDrawer(android.view.View) -> h
-    void closeDrawer(android.view.View) -> i
-    boolean isDrawerVisible(android.view.View) -> j
-    boolean hasPeekingDrawer() -> d
+    void openDrawer(android.view.View) -> g
+    void closeDrawer(android.view.View) -> d
     android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
     android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
     boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
     android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
-    boolean hasVisibleDrawer() -> e
-    android.view.View findVisibleDrawer() -> f
+    android.view.View findVisibleDrawer() -> b
     boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
     boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
     void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
     android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
-    int[] access$100() -> c
+    int[] access$100() -> a
 android.support.v4.widget.DrawerLayout$DrawerListener -> android.support.v4.widget.a:
-    void onDrawerSlide(android.view.View,float) -> a
-    void onDrawerOpened(android.view.View) -> a
-    void onDrawerClosed(android.view.View) -> b
-    void onDrawerStateChanged(int) -> a
 android.support.v4.widget.DrawerLayout$LayoutParams -> android.support.v4.widget.b:
     int gravity -> a
     float onScreen -> b
@@ -965,8 +816,6 @@ android.support.v4.widget.DrawerLayout$SavedState -> android.support.v4.widget.D
     android.os.Parcelable$Creator CREATOR -> CREATOR
     void writeToParcel(android.os.Parcel,int) -> writeToParcel
 android.support.v4.widget.DrawerLayout$SavedState$1 -> android.support.v4.widget.c:
-    android.support.v4.widget.DrawerLayout$SavedState createFromParcel(android.os.Parcel) -> a
-    android.support.v4.widget.DrawerLayout$SavedState[] newArray(int) -> a
     java.lang.Object[] newArray(int) -> newArray
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
 android.support.v4.widget.DrawerLayout$ViewDragCallback -> android.support.v4.widget.d:
@@ -975,18 +824,16 @@ android.support.v4.widget.DrawerLayout$ViewDragCallback -> android.support.v4.wi
     java.lang.Runnable mPeekRunnable -> d
     android.support.v4.widget.DrawerLayout this$0 -> a
     void removeCallbacks() -> a
-    boolean tryCaptureView(android.view.View,int) -> a
+    boolean tryCaptureView$5359dc96(android.view.View) -> a
     void onViewDragStateChanged(int) -> a
-    void onViewPositionChanged(android.view.View,int,int,int,int) -> a
-    void onViewCaptured(android.view.View,int) -> b
-    void closeOtherDrawer() -> b
-    void onViewReleased(android.view.View,float,float) -> a
-    void onEdgeTouched(int,int) -> a
-    boolean onEdgeLock(int) -> b
-    void onEdgeDragStarted(int,int) -> b
-    int getViewHorizontalDragRange(android.view.View) -> a
-    int clampViewPositionHorizontal(android.view.View,int,int) -> a
-    int clampViewPositionVertical(android.view.View,int,int) -> b
+    void onViewPositionChanged$5b6f797d(android.view.View,int) -> a
+    void onViewCaptured$5359dc9a(android.view.View) -> b
+    void onViewReleased$17e2ac03(android.view.View,float) -> a
+    void onEdgeTouched$255f295() -> b
+    void onEdgeDragStarted(int,int) -> a
+    int getViewHorizontalDragRange(android.view.View) -> c
+    int clampViewPositionHorizontal$17e143b0(android.view.View,int) -> b
+    int clampViewPositionVertical$17e143b0(android.view.View) -> d
 android.support.v4.widget.EdgeEffectCompat -> android.support.v4.widget.e:
     java.lang.Object mEdgeEffect -> a
     android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl IMPL -> b
@@ -1017,14 +864,7 @@ android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl -> android.support.v4.
     boolean onPull(java.lang.Object,float) -> a
     boolean onRelease(java.lang.Object) -> c
     boolean draw(java.lang.Object,android.graphics.Canvas) -> a
-android.support.v4.widget.EdgeEffectCompatIcs -> android.support.v4.widget.i:
-    void setSize(java.lang.Object,int,int) -> a
-    boolean isFinished(java.lang.Object) -> a
-    void finish(java.lang.Object) -> b
-    boolean onPull(java.lang.Object,float) -> a
-    boolean onRelease(java.lang.Object) -> c
-    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
-android.support.v4.widget.ScrollerCompat -> android.support.v4.widget.j:
+android.support.v4.widget.ScrollerCompat -> android.support.v4.widget.i:
     java.lang.Object mScroller -> a
     android.support.v4.widget.ScrollerCompat$ScrollerCompatImpl IMPL -> b
     boolean isFinished() -> a
@@ -1035,7 +875,7 @@ android.support.v4.widget.ScrollerCompat -> android.support.v4.widget.j:
     boolean computeScrollOffset() -> f
     void startScroll(int,int,int,int,int) -> a
     void abortAnimation() -> g
-android.support.v4.widget.ScrollerCompat$ScrollerCompatImpl -> android.support.v4.widget.k:
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImpl -> android.support.v4.widget.j:
     boolean isFinished(java.lang.Object) -> a
     int getCurrX(java.lang.Object) -> b
     int getCurrY(java.lang.Object) -> c
@@ -1044,7 +884,7 @@ android.support.v4.widget.ScrollerCompat$ScrollerCompatImpl -> android.support.v
     void abortAnimation(java.lang.Object) -> e
     int getFinalX(java.lang.Object) -> f
     int getFinalY(java.lang.Object) -> g
-android.support.v4.widget.ScrollerCompat$ScrollerCompatImplBase -> android.support.v4.widget.l:
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplBase -> android.support.v4.widget.k:
     boolean isFinished(java.lang.Object) -> a
     int getCurrX(java.lang.Object) -> b
     int getCurrY(java.lang.Object) -> c
@@ -1053,7 +893,7 @@ android.support.v4.widget.ScrollerCompat$ScrollerCompatImplBase -> android.suppo
     void abortAnimation(java.lang.Object) -> e
     int getFinalX(java.lang.Object) -> f
     int getFinalY(java.lang.Object) -> g
-android.support.v4.widget.ScrollerCompat$ScrollerCompatImplGingerbread -> android.support.v4.widget.m:
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplGingerbread -> android.support.v4.widget.l:
     boolean isFinished(java.lang.Object) -> a
     int getCurrX(java.lang.Object) -> b
     int getCurrY(java.lang.Object) -> c
@@ -1062,16 +902,7 @@ android.support.v4.widget.ScrollerCompat$ScrollerCompatImplGingerbread -> androi
     void abortAnimation(java.lang.Object) -> e
     int getFinalX(java.lang.Object) -> f
     int getFinalY(java.lang.Object) -> g
-android.support.v4.widget.ScrollerCompat$ScrollerCompatImplIcs -> android.support.v4.widget.n:
-android.support.v4.widget.ScrollerCompatGingerbread -> android.support.v4.widget.o:
-    boolean isFinished(java.lang.Object) -> a
-    int getCurrX(java.lang.Object) -> b
-    int getCurrY(java.lang.Object) -> c
-    boolean computeScrollOffset(java.lang.Object) -> d
-    void startScroll(java.lang.Object,int,int,int,int,int) -> a
-    void abortAnimation(java.lang.Object) -> e
-    int getFinalX(java.lang.Object) -> f
-    int getFinalY(java.lang.Object) -> g
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplIcs -> android.support.v4.widget.m:
 android.support.v4.widget.SlidingPaneLayout -> android.support.v4.widget.SlidingPaneLayout:
     int mSliderFadeColor -> b
     int mCoveredFadeColor -> c
@@ -1100,9 +931,6 @@ android.support.v4.widget.SlidingPaneLayout -> android.support.v4.widget.Sliding
     void setCoveredFadeColor(int) -> setCoveredFadeColor
     int getCoveredFadeColor() -> getCoveredFadeColor
     void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener) -> setPanelSlideListener
-    void updateObscuredViewsVisibility(android.view.View) -> a
-    void setAllChildrenVisible() -> a
-    boolean hasOpaqueBackground(android.view.View) -> c
     void onAttachedToWindow() -> onAttachedToWindow
     void onDetachedFromWindow() -> onDetachedFromWindow
     void onMeasure(int,int) -> onMeasure
@@ -1111,21 +939,15 @@ android.support.v4.widget.SlidingPaneLayout -> android.support.v4.widget.Sliding
     void requestChildFocus(android.view.View,android.view.View) -> requestChildFocus
     boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
     boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
-    boolean closePane(android.view.View,int) -> a
-    boolean openPane(android.view.View,int) -> b
-    boolean openPane() -> b
-    boolean closePane() -> c
-    boolean isOpen() -> d
-    boolean isSlideable() -> e
+    boolean closePane$5359dc96$134632() -> a
     void dimChildView(android.view.View,float,int) -> a
     boolean drawChild(android.graphics.Canvas,android.view.View,long) -> drawChild
-    void invalidateChildRegion(android.view.View) -> d
-    boolean smoothSlideTo(float,int) -> a
+    void invalidateChildRegion(android.view.View) -> a
+    boolean smoothSlideTo$254957c(float) -> a
     void computeScroll() -> computeScroll
     void setShadowDrawable(android.graphics.drawable.Drawable) -> setShadowDrawable
     void setShadowResource(int) -> setShadowResource
     void draw(android.graphics.Canvas) -> draw
-    void parallaxOtherViews(float) -> a
     boolean isDimmed(android.view.View) -> b
     android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
     android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
@@ -1135,38 +957,35 @@ android.support.v4.widget.SlidingPaneLayout -> android.support.v4.widget.Sliding
     void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
     void access$900(android.support.v4.widget.SlidingPaneLayout,android.view.View) -> a
     java.util.ArrayList access$1000(android.support.v4.widget.SlidingPaneLayout) -> a
-android.support.v4.widget.SlidingPaneLayout$1 -> android.support.v4.widget.p:
-android.support.v4.widget.SlidingPaneLayout$DisableLayerRunnable -> android.support.v4.widget.q:
+android.support.v4.widget.SlidingPaneLayout$DisableLayerRunnable -> android.support.v4.widget.n:
     android.view.View mChildView -> a
     android.support.v4.widget.SlidingPaneLayout this$0 -> b
     void run() -> run
-android.support.v4.widget.SlidingPaneLayout$LayoutParams -> android.support.v4.widget.r:
+android.support.v4.widget.SlidingPaneLayout$LayoutParams -> android.support.v4.widget.o:
     int[] ATTRS -> e
     float weight -> a
     boolean slideable -> b
     boolean dimWhenOffset -> c
     android.graphics.Paint dimPaint -> d
-android.support.v4.widget.SlidingPaneLayout$PanelSlideListener -> android.support.v4.widget.s:
+android.support.v4.widget.SlidingPaneLayout$PanelSlideListener -> android.support.v4.widget.p:
 android.support.v4.widget.SlidingPaneLayout$SavedState -> android.support.v4.widget.SlidingPaneLayout$SavedState:
     boolean isOpen -> a
     android.os.Parcelable$Creator CREATOR -> CREATOR
     void writeToParcel(android.os.Parcel,int) -> writeToParcel
-android.support.v4.widget.SlidingPaneLayout$SavedState$1 -> android.support.v4.widget.t:
-    android.support.v4.widget.SlidingPaneLayout$SavedState createFromParcel(android.os.Parcel) -> a
-    android.support.v4.widget.SlidingPaneLayout$SavedState[] newArray(int) -> a
+android.support.v4.widget.SlidingPaneLayout$SavedState$1 -> android.support.v4.widget.q:
     java.lang.Object[] newArray(int) -> newArray
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
-android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImpl -> android.support.v4.widget.u:
+android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImpl -> android.support.v4.widget.r:
     void invalidateChildRegion(android.support.v4.widget.SlidingPaneLayout,android.view.View) -> a
-android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImplBase -> android.support.v4.widget.v:
+android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImplBase -> android.support.v4.widget.s:
     void invalidateChildRegion(android.support.v4.widget.SlidingPaneLayout,android.view.View) -> a
-android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImplJB -> android.support.v4.widget.w:
+android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImplJB -> android.support.v4.widget.t:
     java.lang.reflect.Method mGetDisplayList -> a
     java.lang.reflect.Field mRecreateDisplayList -> b
     void invalidateChildRegion(android.support.v4.widget.SlidingPaneLayout,android.view.View) -> a
-android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImplJBMR1 -> android.support.v4.widget.x:
+android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImplJBMR1 -> android.support.v4.widget.u:
     void invalidateChildRegion(android.support.v4.widget.SlidingPaneLayout,android.view.View) -> a
-android.support.v4.widget.ViewDragHelper -> android.support.v4.widget.y:
+android.support.v4.widget.ViewDragHelper -> android.support.v4.widget.v:
     int mDragState -> a
     int mTouchSlop -> b
     int mActivePointerId -> c
@@ -1200,71 +1019,50 @@ android.support.v4.widget.ViewDragHelper -> android.support.v4.widget.y:
     boolean smoothSlideViewTo(android.view.View,int,int) -> a
     boolean settleCapturedViewAt(int,int) -> a
     boolean forceSettleCapturedViewAt(int,int,int,int) -> a
-    int computeSettleDuration(android.view.View,int,int,int,int) -> a
     int computeAxisDuration(int,int,int) -> a
     int clampMag(int,int,int) -> b
     float clampMag(float,float,float) -> a
-    float distanceInfluenceForSnapDuration(float) -> a
-    boolean continueSettling(boolean) -> a
-    void dispatchViewReleased(float,float) -> a
-    void clearMotionHistory() -> g
-    void clearMotionHistory(int) -> e
-    void ensureMotionHistorySizeForId(int) -> f
+    boolean continueSettling$138603() -> g
+    void dispatchViewReleased$2548a35(float) -> a
+    void clearMotionHistory(int) -> b
     void saveInitialMotion(float,float,int) -> a
     void saveLastMotion(android.view.MotionEvent) -> c
-    boolean isPointerDown(int) -> a
-    void setDragState(int) -> b
+    boolean isPointerDown(int) -> c
+    void setDragState(int) -> d
     boolean tryCaptureViewForDrag(android.view.View,int) -> b
     boolean shouldInterceptTouchEvent(android.view.MotionEvent) -> a
     void processTouchEvent(android.view.MotionEvent) -> b
     void reportNewEdgeDrags(float,float,int) -> b
     boolean checkNewEdgeDrag(float,float,int,int) -> a
-    boolean checkTouchSlop(android.view.View,float,float) -> a
-    boolean checkTouchSlop(int) -> c
-    boolean checkTouchSlop(int,int) -> b
-    boolean isEdgeTouched(int) -> d
-    boolean isEdgeTouched(int,int) -> c
-    void releaseViewForPointerUp() -> h
-    void dragTo(int,int,int,int) -> b
-    boolean isCapturedViewUnder(int,int) -> d
+    boolean checkTouchSlop$17e2abff(android.view.View,float) -> a
+    boolean checkTouchSlop$134632() -> h
+    boolean isEdgeTouched(int) -> a
+    void releaseViewForPointerUp() -> i
     boolean isViewUnder(android.view.View,int,int) -> b
-    android.view.View findTopChildUnder(int,int) -> e
-    int getEdgesTouched(int,int) -> f
-android.support.v4.widget.ViewDragHelper$1 -> android.support.v4.widget.z:
+    android.view.View findTopChildUnder(int,int) -> b
+android.support.v4.widget.ViewDragHelper$1 -> android.support.v4.widget.w:
     float getInterpolation(float) -> getInterpolation
-android.support.v4.widget.ViewDragHelper$Callback -> android.support.v4.widget.aa:
+android.support.v4.widget.ViewDragHelper$Callback -> android.support.v4.widget.x:
     void onViewDragStateChanged(int) -> a
-    void onViewPositionChanged(android.view.View,int,int,int,int) -> a
-    void onViewCaptured(android.view.View,int) -> b
-    void onViewReleased(android.view.View,float,float) -> a
-    void onEdgeTouched(int,int) -> a
-    boolean onEdgeLock(int) -> b
-    void onEdgeDragStarted(int,int) -> b
-    int getOrderedChildIndex(int) -> c
-    int getViewHorizontalDragRange(android.view.View) -> a
-    int getViewVerticalDragRange(android.view.View) -> b
-    boolean tryCaptureView(android.view.View,int) -> a
-    int clampViewPositionHorizontal(android.view.View,int,int) -> a
-    int clampViewPositionVertical(android.view.View,int,int) -> b
-com.baidu.android.bbalbs.common.a.a -> com.baidu.a.a.a.a.a:
-    byte[] a(java.lang.String,java.lang.String,byte[]) -> a
-    byte[] b(java.lang.String,java.lang.String,byte[]) -> b
-com.baidu.android.bbalbs.common.a.b -> com.baidu.a.a.a.a.b:
+    void onViewPositionChanged$5b6f797d(android.view.View,int) -> a
+    void onViewCaptured$5359dc9a(android.view.View) -> b
+    void onViewReleased$17e2ac03(android.view.View,float) -> a
+    void onEdgeTouched$255f295() -> b
+    void onEdgeDragStarted(int,int) -> a
+    int getViewHorizontalDragRange(android.view.View) -> c
+    boolean tryCaptureView$5359dc96(android.view.View) -> a
+    int clampViewPositionHorizontal$17e143b0(android.view.View,int) -> b
+    int clampViewPositionVertical$17e143b0(android.view.View) -> d
+com.baidu.android.bbalbs.common.a.b -> com.baidu.a.a.a.a.a:
     byte[] a -> a
     byte[] a(byte[]) -> a
-    byte[] a(byte[],int) -> a
     java.lang.String a(byte[],java.lang.String) -> a
-com.baidu.android.bbalbs.common.a.c -> com.baidu.a.a.a.a.c:
-    java.lang.String a(byte[],boolean) -> a
-    java.lang.String a(byte[],java.lang.String,boolean) -> a
+com.baidu.android.bbalbs.common.a.c -> com.baidu.a.a.a.a.b:
+    java.lang.String a$5a238448(byte[]) -> a
 com.baidu.android.bbalbs.common.util.CommonParam -> com.baidu.a.a.a.b.a:
     java.lang.String a -> a
     java.lang.String a(android.content.Context) -> a
-    java.lang.String b(android.content.Context) -> b
 com.baidu.android.bbalbs.common.util.a -> com.baidu.a.a.a.b.b:
-    java.lang.String a(android.content.Context) -> a
-    java.lang.String b(android.content.Context) -> b
-    java.lang.String c(android.content.Context) -> c
     void a(android.content.Context,java.lang.String) -> a
     java.lang.String a(java.lang.String) -> a
     void a(java.lang.String,java.lang.String) -> a
@@ -1273,11 +1071,9 @@ com.baidu.android.bbalbs.common.util.a$a -> com.baidu.a.a.a.b.c:
     boolean b -> b
     java.lang.String a(android.content.Context,java.lang.String) -> a
     com.baidu.android.bbalbs.common.util.a$a a(android.content.Context) -> a
-    java.lang.String a(java.lang.String) -> a
 com.baidu.lbsapi.auth.a -> com.baidu.b.a.a:
     boolean a -> a
     void a(java.lang.String) -> a
-    java.lang.String a() -> a
 com.baidu.lbsapi.auth.c -> com.baidu.b.a.b:
 com.baidu.lbsapi.auth.e -> com.baidu.b.a.c:
     boolean a -> a
@@ -1293,7 +1089,7 @@ com.baidu.lbsapi.auth.f -> com.baidu.b.a.d:
     com.baidu.lbsapi.auth.e a -> a
     void handleMessage(android.os.Message) -> handleMessage
 com.baidu.lbsapi.auth.i -> com.baidu.b.a.e:
-    void a(int,java.lang.String) -> a
+    void a$4f708078(java.lang.String) -> a
 com.baidu.lbsapi.auth.j -> com.baidu.b.a.f:
     android.os.Handler a -> a
     java.lang.Object b -> b
@@ -1301,16 +1097,16 @@ com.baidu.lbsapi.auth.j -> com.baidu.b.a.f:
     boolean d -> d
     void run() -> run
 com.baidu.location.BDLocation -> com.baidu.location.a:
-    int if -> c
-    java.lang.String d -> d
-    double else -> e
-    double for -> f
-    boolean c -> g
-    double f -> h
-    boolean int -> i
-    float new -> j
-    boolean try -> k
-    float long -> l
+    int if -> a
+    java.lang.String d -> g
+    double else -> b
+    double for -> c
+    boolean c -> h
+    double f -> i
+    boolean int -> j
+    float new -> k
+    boolean try -> l
+    float long -> d
     boolean b -> m
     int do -> n
     float char -> o
@@ -1319,23 +1115,10 @@ com.baidu.location.BDLocation -> com.baidu.location.a:
     boolean void -> r
     boolean case -> s
     java.lang.String a -> t
-    java.lang.String mServerString -> a
+    java.lang.String mServerString -> e
     boolean e -> u
-    com.baidu.location.BDLocation$a mAddr -> b
-    void a(java.lang.Boolean) -> a
-    void setTime(java.lang.String) -> a
-    double getLatitude() -> a
-    void setLatitude(double) -> a
-    double getLongitude() -> b
-    void setLongitude(double) -> b
-    void setSpeed(float) -> a
-    float getRadius() -> c
-    void setRadius(float) -> b
-    void setAddrStr(java.lang.String) -> b
-    void setLocType(int) -> a
-    int getLocType() -> d
-    void setSatelliteNumber(int) -> b
-    void setDerect(float) -> c
+    com.baidu.location.BDLocation$a mAddr -> f
+    void setRadius(float) -> a
 com.baidu.location.BDLocation$a -> com.baidu.location.b:
     java.lang.String if -> a
     java.lang.String new -> b
@@ -1347,7 +1130,6 @@ com.baidu.location.BDLocation$a -> com.baidu.location.b:
     com.baidu.location.BDLocation a -> h
 com.baidu.location.BDLocationListener -> com.baidu.location.c:
     void onReceiveLocation(com.baidu.location.BDLocation) -> a
-    void onReceivePoi(com.baidu.location.BDLocation) -> b
 com.baidu.location.BDNotifyListener -> com.baidu.location.d:
     double mLatitude -> a
     double mLongitude -> b
@@ -1359,7 +1141,7 @@ com.baidu.location.BDNotifyListener -> com.baidu.location.d:
     int Notified -> h
     boolean isAdded -> i
     com.baidu.location.i mNotifyCache -> j
-    void onNotify(com.baidu.location.BDLocation,float) -> a
+    void onNotify$60ae983(float) -> a
 com.baidu.location.Jni -> com.baidu.location.Jni:
     int case -> a
     int try -> b
@@ -1375,81 +1157,41 @@ com.baidu.location.Jni -> com.baidu.location.Jni:
     java.lang.String if(java.lang.String) -> a
     double[] if(double,double,java.lang.String) -> a
 com.baidu.location.LocationClient -> com.baidu.location.e:
-    java.lang.String e -> a
-    long r -> b
-    long char -> c
-    java.lang.String A -> d
-    com.baidu.location.LocationClientOption l -> e
-    boolean q -> f
-    android.content.Context j -> g
-    android.os.Messenger k -> h
-    com.baidu.location.LocationClient$a do -> i
-    android.os.Messenger i -> j
-    java.util.ArrayList C -> k
-    com.baidu.location.BDLocation x -> l
-    boolean d -> m
-    boolean v -> n
-    boolean g -> o
-    com.baidu.location.LocationClient$b byte -> p
-    boolean a -> q
-    boolean int -> r
-    java.lang.Object new -> s
-    com.baidu.location.i else -> t
-    boolean w -> u
-    com.baidu.location.BDLocationListener c -> v
-    java.lang.String z -> w
-    java.lang.String u -> x
-    java.lang.Boolean long -> y
-    java.lang.Boolean case -> z
-    android.content.ServiceConnection t -> A
-    void setLocOption(com.baidu.location.LocationClientOption) -> a
+    java.lang.String e -> r
+    long r -> s
+    long char -> t
+    java.lang.String A -> a
+    com.baidu.location.LocationClientOption l -> b
+    boolean q -> c
+    android.content.Context j -> d
+    android.os.Messenger k -> e
+    com.baidu.location.LocationClient$a do -> f
+    android.os.Messenger i -> g
+    java.util.ArrayList C -> h
+    com.baidu.location.BDLocation x -> u
+    boolean d -> v
+    boolean v -> w
+    boolean g -> i
+    com.baidu.location.LocationClient$b byte -> j
+    boolean a -> k
+    boolean int -> l
+    java.lang.Object new -> m
+    com.baidu.location.i else -> n
+    boolean w -> x
+    com.baidu.location.BDLocationListener c -> o
+    java.lang.String z -> p
+    java.lang.String u -> y
+    java.lang.Boolean long -> z
+    java.lang.Boolean case -> A
+    android.content.ServiceConnection t -> q
     void requestNotifyLocation() -> a
-    void try() -> e
-    boolean isStarted() -> b
-    void start() -> c
-    void for() -> f
-    void stop() -> d
-    void int() -> g
-    void onRegisterNotify(android.os.Message) -> a
-    void onRemoveNotifyEvent(android.os.Message) -> b
-    void if(android.os.Message) -> d
-    android.os.Bundle if() -> h
-    android.os.Bundle a() -> i
-    void registerNotifyLocationListener(com.baidu.location.BDLocationListener) -> a
-    void onRegisterNotifyLocationListener(android.os.Message) -> c
-    void registerLocationListener(com.baidu.location.BDLocationListener) -> b
-    void for(android.os.Message) -> e
-    void unRegisterLocationListener(com.baidu.location.BDLocationListener) -> c
-    void a(android.os.Message) -> f
-    void new() -> j
-    void byte() -> k
-    void do() -> l
-    void a(android.os.Message,int) -> a
-    void do(android.os.Message) -> g
+    android.os.Bundle if() -> b
     void a(int) -> a
-    android.os.Messenger a(com.baidu.location.LocationClient,android.os.Messenger) -> a
-    android.os.Messenger char(com.baidu.location.LocationClient) -> a
-    boolean if(com.baidu.location.LocationClient,boolean) -> a
-    android.os.Messenger for(com.baidu.location.LocationClient) -> b
-    android.os.Bundle long(com.baidu.location.LocationClient) -> c
-    boolean do(com.baidu.location.LocationClient,boolean) -> b
-    com.baidu.location.LocationClientOption try(com.baidu.location.LocationClient) -> d
-    com.baidu.location.LocationClient$a new(com.baidu.location.LocationClient) -> e
-    java.lang.Object do(com.baidu.location.LocationClient) -> f
-    boolean for(com.baidu.location.LocationClient,boolean) -> c
-    java.util.ArrayList else(com.baidu.location.LocationClient) -> g
+    android.os.Bundle long(com.baidu.location.LocationClient) -> a
     void for(com.baidu.location.LocationClient,android.os.Message) -> a
-    void do(com.baidu.location.LocationClient,android.os.Message) -> b
-    void if(com.baidu.location.LocationClient,android.os.Message) -> c
-    void goto(com.baidu.location.LocationClient) -> h
-    void if(com.baidu.location.LocationClient) -> i
-    void case(com.baidu.location.LocationClient) -> j
-    void a(com.baidu.location.LocationClient) -> k
-    void int(com.baidu.location.LocationClient) -> l
-    void byte(com.baidu.location.LocationClient) -> m
-    boolean a(com.baidu.location.LocationClient,boolean) -> d
+    void a(com.baidu.location.LocationClient) -> b
+    void byte(com.baidu.location.LocationClient) -> c
     void a(com.baidu.location.LocationClient,android.os.Message,int) -> a
-    void a(com.baidu.location.LocationClient,android.os.Message) -> d
 com.baidu.location.LocationClient$1 -> com.baidu.location.g:
     com.baidu.location.LocationClient a -> a
     void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
@@ -1477,9 +1219,9 @@ com.baidu.location.LocationClientOption -> com.baidu.location.j:
     java.lang.String byte -> n
     boolean equals(com.baidu.location.LocationClientOption) -> a
     void setCoorType(java.lang.String) -> a
-    void setOpenGps(boolean) -> a
-    void setScanSpan(int) -> a
-    boolean isDisableCache() -> a
+    void setOpenGps$1385ff() -> a
+    void setScanSpan$13462e() -> b
+    boolean isDisableCache() -> c
 com.baidu.location.a -> com.baidu.location.k:
     java.lang.String if -> a
     java.util.ArrayList do -> b
@@ -1498,10 +1240,7 @@ com.baidu.location.a -> com.baidu.location.k:
     java.lang.String byte() -> b
     int do(android.os.Message) -> e
     com.baidu.location.a$a a(android.os.Messenger) -> a
-    void a(com.baidu.location.a$a) -> a
     void do() -> e
-    void int() -> f
-    void a() -> g
     void new() -> c
     java.lang.String try() -> d
 com.baidu.location.a$a -> com.baidu.location.l:
@@ -1516,7 +1255,6 @@ com.baidu.location.a$a -> com.baidu.location.l:
     void if() -> a
     void a(int) -> a
     void a(int,java.lang.String,java.lang.String) -> a
-    void a(com.baidu.location.a$a,int) -> a
 com.baidu.location.b -> com.baidu.location.m:
     long o -> a
     android.content.Context f -> b
@@ -1560,17 +1298,14 @@ com.baidu.location.b -> com.baidu.location.m:
     java.lang.String if(android.location.Location) -> a
     java.lang.String do() -> c
     android.location.Location int() -> d
-    boolean new() -> e
-    boolean for() -> f
+    boolean for() -> e
     boolean a(android.location.Location,android.location.Location,boolean) -> a
-    void a(android.location.Location) -> b
-    void a(double,double,float) -> a
-    void a(boolean) -> b
-    java.lang.String k() -> g
+    void a(boolean) -> a
+    java.lang.String k() -> f
     boolean if(int,int,int) -> b
-    boolean d() -> x
-    void void() -> y
-    java.lang.String e() -> h
+    boolean d() -> k
+    void void() -> l
+    java.lang.String e() -> g
     void a(com.baidu.location.b,android.location.Location) -> a
     boolean a(com.baidu.location.b,boolean) -> a
     boolean a(com.baidu.location.b) -> a
@@ -1579,7 +1314,7 @@ com.baidu.location.b -> com.baidu.location.m:
     android.location.LocationManager int(com.baidu.location.b) -> b
     android.location.GpsStatus case(com.baidu.location.b) -> c
     android.location.GpsStatus a(com.baidu.location.b,android.location.GpsStatus) -> a
-    int h() -> i
+    int h() -> h
     long a(com.baidu.location.b,long) -> b
     int a(int) -> a
     long do(com.baidu.location.b) -> d
@@ -1594,103 +1329,62 @@ com.baidu.location.b -> com.baidu.location.m:
     java.lang.String if(com.baidu.location.b,java.lang.String) -> c
     boolean do(com.baidu.location.b,boolean) -> c
     long if(com.baidu.location.b,long) -> c
-    boolean l() -> j
-    int if(int) -> b
-    java.lang.StringBuffer a(java.lang.StringBuffer) -> a
-    java.lang.StringBuffer g() -> k
-    int do(int) -> c
-    long if(long) -> a
-    long a(long) -> b
-    long do(long) -> c
-    boolean if(boolean) -> a
-    long a() -> l
-    long else() -> m
-    long m() -> n
-    int byte() -> o
-    int int(int) -> d
-    int for(int) -> e
-    int new(int) -> f
-    int goto() -> p
-    int if() -> q
-    int long() -> r
-    int char() -> s
-    int c() -> t
-    java.io.File b() -> u
-    void case() -> v
-    boolean f() -> w
+    java.io.File b() -> i
+    boolean f() -> j
     boolean a(int,int,int) -> a
-com.baidu.location.b$1 -> com.baidu.location.n:
-com.baidu.location.b$a -> com.baidu.location.o:
+com.baidu.location.b$a -> com.baidu.location.n:
     com.baidu.location.b a -> a
     void onGpsStatusChanged(int) -> onGpsStatusChanged
     void onNmeaReceived(long,java.lang.String) -> onNmeaReceived
-com.baidu.location.b$b -> com.baidu.location.p:
+com.baidu.location.b$b -> com.baidu.location.o:
     com.baidu.location.b a -> a
     void onLocationChanged(android.location.Location) -> onLocationChanged
     void onProviderDisabled(java.lang.String) -> onProviderDisabled
     void onProviderEnabled(java.lang.String) -> onProviderEnabled
     void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
-com.baidu.location.b$c -> com.baidu.location.q:
-    boolean f -> c
-    java.lang.String d -> d
-    boolean r -> e
-    java.lang.String goto -> f
-    double else -> g
-    double byte -> h
-    double o -> i
-    int h -> j
-    int m -> k
-    java.lang.String q -> l
-    boolean long -> m
-    java.lang.String k -> n
-    char c -> o
-    double j -> p
-    double a -> q
-    java.lang.String p -> r
-    boolean i -> s
-    int try -> t
-    double b -> u
-    double case -> v
-    double char -> w
-    java.util.List new -> x
-    boolean void -> y
-    java.util.List e -> z
+com.baidu.location.b$c -> com.baidu.location.p:
+    boolean f -> a
+    java.lang.String d -> p
+    boolean r -> b
+    java.lang.String goto -> q
+    double else -> c
+    double byte -> d
+    double o -> e
+    int h -> r
+    int m -> f
+    java.lang.String q -> s
+    boolean long -> t
+    java.lang.String k -> u
+    char c -> v
+    double j -> g
+    double a -> h
+    java.lang.String p -> w
+    boolean i -> i
+    int try -> x
+    double b -> j
+    double case -> k
+    double char -> y
+    java.util.List new -> z
+    boolean void -> l
+    java.util.List e -> m
     int n -> A
-    int do -> a
-    com.baidu.location.b l -> b
+    int do -> n
+    com.baidu.location.b l -> o
     void void() -> a
     boolean a(java.lang.String) -> a
-    int c() -> b
-    int a(boolean,boolean,boolean,boolean,boolean) -> a
     double[] a(java.util.List) -> a
     double[] if(double,double) -> a
-    double[] a(double,double) -> b
-    boolean if() -> c
-    double l() -> d
-    double d() -> e
-    double try() -> f
-    double case() -> g
-    double j() -> h
-    double b() -> i
-    double a() -> j
-    int goto() -> k
-com.baidu.location.b$c$a -> com.baidu.location.r:
-    int int -> b
-    int a -> c
-    int if -> d
-    int do -> e
-    com.baidu.location.b$c for -> a
-    int a() -> a
-    int if() -> b
-    int do() -> c
-com.baidu.location.b$d -> com.baidu.location.s:
+com.baidu.location.b$c$a -> com.baidu.location.q:
+    int int -> e
+    int a -> a
+    int if -> b
+    int do -> c
+    com.baidu.location.b$c for -> d
+com.baidu.location.b$d -> com.baidu.location.r:
     java.lang.String a -> a
-    boolean a(android.location.Location) -> a
-    boolean a(android.location.Location,int,int) -> a
     boolean a(java.lang.String) -> a
     java.lang.String a(int) -> a
-    void do() -> a
-com.baidu.location.c -> com.baidu.location.t:
+com.baidu.location.c -> com.baidu.location.s:
     java.lang.String else -> a
     android.content.Context if -> b
     android.telephony.TelephonyManager try -> c
@@ -1721,7 +1415,7 @@ com.baidu.location.c -> com.baidu.location.t:
     android.telephony.TelephonyManager if(com.baidu.location.c) -> c
     void a(com.baidu.location.c,android.telephony.CellLocation) -> a
     android.os.Handler a(com.baidu.location.c) -> d
-com.baidu.location.c$a -> com.baidu.location.u:
+com.baidu.location.c$a -> com.baidu.location.t:
     int for -> a
     int try -> b
     int do -> c
@@ -1735,13 +1429,12 @@ com.baidu.location.c$a -> com.baidu.location.u:
     boolean for() -> b
     java.lang.String a() -> c
     java.lang.String toString() -> toString
-    java.lang.String if() -> d
-    java.lang.String int() -> e
-com.baidu.location.c$b -> com.baidu.location.v:
+    java.lang.String int() -> d
+com.baidu.location.c$b -> com.baidu.location.u:
     com.baidu.location.c a -> a
     void onCellLocationChanged(android.telephony.CellLocation) -> onCellLocationChanged
     void onSignalStrengthsChanged(android.telephony.SignalStrength) -> onSignalStrengthsChanged
-com.baidu.location.e -> com.baidu.location.w:
+com.baidu.location.e -> com.baidu.location.v:
     java.lang.String try -> a
     long f -> b
     long new -> c
@@ -1769,8 +1462,7 @@ com.baidu.location.e -> com.baidu.location.w:
     java.lang.String char() -> f
     com.baidu.location.e$c int() -> g
     com.baidu.location.e$c byte() -> h
-    void if() -> k
-    void goto() -> l
+    void goto() -> k
     void for() -> i
     boolean do(com.baidu.location.e) -> a
     android.os.Handler if(com.baidu.location.e) -> b
@@ -1778,34 +1470,27 @@ com.baidu.location.e -> com.baidu.location.w:
     void a(com.baidu.location.e) -> c
     void for(com.baidu.location.e) -> d
     java.lang.String do() -> j
-com.baidu.location.e$1 -> com.baidu.location.x:
-com.baidu.location.e$a -> com.baidu.location.y:
+com.baidu.location.e$a -> com.baidu.location.w:
     com.baidu.location.e a -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.baidu.location.e$b -> com.baidu.location.z:
+com.baidu.location.e$b -> com.baidu.location.x:
     com.baidu.location.e a -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.baidu.location.e$c -> com.baidu.location.aa:
+com.baidu.location.e$c -> com.baidu.location.y:
     java.util.List do -> a
-    long if -> c
-    long for -> d
-    com.baidu.location.e a -> b
-    java.lang.String for() -> a
-    int new() -> b
-    java.lang.String byte() -> c
-    java.lang.String try() -> d
-    java.lang.String a(int) -> a
-    java.lang.String case() -> e
-    void a() -> i
-    java.lang.String if(int) -> b
-    boolean if(com.baidu.location.e$c) -> a
-    boolean do(com.baidu.location.e$c) -> b
-    boolean a(com.baidu.location.e$c) -> c
-    boolean a(com.baidu.location.e$c,com.baidu.location.e$c,float) -> a
-    boolean do() -> f
-    boolean int() -> g
-    boolean if() -> h
-com.baidu.location.e$d -> com.baidu.location.ab:
+    long if -> b
+    long for -> c
+    com.baidu.location.e a -> d
+    java.lang.String for() -> e
+    int new() -> f
+    java.lang.String byte() -> a
+    java.lang.String try() -> b
+    java.lang.String a(int) -> b
+    java.lang.String case() -> c
+    void a() -> g
+    java.lang.String if(int) -> a
+    boolean do() -> d
+com.baidu.location.e$d -> com.baidu.location.z:
     com.baidu.location.e a -> a
     void run() -> run
 com.baidu.location.f -> com.baidu.location.f:
@@ -1855,47 +1540,23 @@ com.baidu.location.f -> com.baidu.location.f:
     android.os.IBinder onBind(android.content.Intent) -> onBind
     void onDestroy() -> onDestroy
     int onStartCommand(android.content.Intent,int,int) -> onStartCommand
-    void do(android.os.Message) -> a
-    void try(android.os.Message) -> b
-    void byte(android.os.Message) -> c
-    void if() -> f
-    void if(android.os.Message) -> d
-    void a(android.os.Message) -> e
-    void else() -> g
-    void do() -> h
-    void void() -> i
-    void try() -> j
     java.lang.String a(java.lang.String) -> a
-    void long() -> k
-    boolean a(com.baidu.location.e$c) -> a
-    boolean a(com.baidu.location.c$a) -> a
-    void for(android.os.Message) -> f
-    void int(android.os.Message) -> g
-    void new(android.os.Message) -> h
-    void do(java.lang.String) -> b
-    java.lang.String if(boolean) -> a
-    java.lang.String a(boolean) -> b
-    void if(java.lang.String) -> c
-    void c() -> l
-    void byte() -> m
-    void a(android.os.Message,int) -> a
-    void int() -> n
-    void b() -> o
-    void a(int) -> a
-    void case() -> p
+    java.lang.String a(boolean) -> a
+    void byte() -> h
+    void case() -> i
     void goto() -> a
     java.lang.String new() -> b
     boolean char() -> c
     boolean do(com.baidu.location.f) -> a
-    boolean a(com.baidu.location.f,boolean) -> a
-    void goto(com.baidu.location.f) -> b
-    boolean if(com.baidu.location.f) -> c
+    boolean a$385ae0fe(com.baidu.location.f) -> b
+    void goto(com.baidu.location.f) -> c
+    boolean if(com.baidu.location.f) -> d
     void do(com.baidu.location.f,android.os.Message) -> a
     void a(com.baidu.location.f,android.os.Message) -> b
     void try(com.baidu.location.f,android.os.Message) -> c
     void a(com.baidu.location.f,android.os.Message,int) -> a
     void int(com.baidu.location.f,android.os.Message) -> d
-    void else(com.baidu.location.f) -> d
+    void else$1a97996a() -> d
     void byte(com.baidu.location.f) -> e
     void for(com.baidu.location.f,android.os.Message) -> e
     void int(com.baidu.location.f) -> f
@@ -1903,64 +1564,56 @@ com.baidu.location.f -> com.baidu.location.f:
     void byte(com.baidu.location.f,android.os.Message) -> g
     void new(com.baidu.location.f,android.os.Message) -> h
     void a(com.baidu.location.f) -> g
-    void try(com.baidu.location.f) -> h
-    void b(com.baidu.location.f) -> i
-    void for(com.baidu.location.f) -> j
+    void try$1a97996a() -> e
+    void b(com.baidu.location.f) -> h
+    void for(com.baidu.location.f) -> i
     void a(com.baidu.location.f,int) -> a
-    com.baidu.location.f$c case(com.baidu.location.f) -> k
+    com.baidu.location.f$c case(com.baidu.location.f) -> j
     java.io.File a(java.io.File) -> a
-    com.baidu.location.e long(com.baidu.location.f) -> l
-    com.baidu.location.c void(com.baidu.location.f) -> m
-    java.io.File for() -> d
-    java.lang.String char(com.baidu.location.f) -> n
-    java.io.File a() -> e
-    com.baidu.location.a new(com.baidu.location.f) -> o
-com.baidu.location.f$1 -> com.baidu.location.ac:
-com.baidu.location.f$a -> com.baidu.location.ad:
+    com.baidu.location.e long(com.baidu.location.f) -> k
+    com.baidu.location.c void(com.baidu.location.f) -> l
+    java.io.File for() -> f
+    java.lang.String char(com.baidu.location.f) -> m
+    java.io.File a() -> g
+    com.baidu.location.a new(com.baidu.location.f) -> n
+com.baidu.location.f$a -> com.baidu.location.aa:
     android.content.Context if -> b
     com.baidu.location.f a -> a
     void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
     void a(java.io.File,java.lang.String,java.lang.String) -> a
-    void a() -> a
-    java.lang.String a(java.lang.Throwable) -> a
     boolean a(java.lang.String,java.lang.String) -> a
-com.baidu.location.f$b -> com.baidu.location.ae:
+com.baidu.location.f$b -> com.baidu.location.ab:
     com.baidu.location.f a -> a
     void run() -> run
-com.baidu.location.f$c -> com.baidu.location.af:
-    long new -> b
-    int char -> c
-    android.app.AlarmManager try -> d
-    com.baidu.location.f$c$a case -> e
-    android.app.PendingIntent d -> f
-    android.content.Context goto -> g
-    long void -> h
-    long[] a -> i
-    int int -> j
-    com.baidu.location.c$a b -> k
-    java.lang.String long -> l
-    int byte -> m
-    boolean do -> n
-    boolean if -> o
-    boolean else -> p
-    java.lang.String c -> q
-    com.baidu.location.f e -> a
-    void try() -> a
-    void do() -> b
-    void for() -> c
-    void a() -> d
-    void if() -> e
-    void case() -> f
-    void new() -> g
-    void byte() -> h
-    java.lang.String a(com.baidu.location.f$c,java.lang.String) -> a
-com.baidu.location.f$c$a -> com.baidu.location.ag:
+com.baidu.location.f$c -> com.baidu.location.ac:
+    long new -> o
+    int char -> p
+    android.app.AlarmManager try -> a
+    com.baidu.location.f$c$a case -> b
+    android.app.PendingIntent d -> c
+    android.content.Context goto -> d
+    long void -> q
+    long[] a -> e
+    int int -> f
+    com.baidu.location.c$a b -> g
+    java.lang.String long -> h
+    int byte -> i
+    boolean do -> j
+    boolean if -> k
+    boolean else -> l
+    java.lang.String c -> m
+    com.baidu.location.f e -> n
+    void for() -> a
+    void a() -> c
+    void if() -> b
+    void case() -> d
+com.baidu.location.f$c$a -> com.baidu.location.ad:
     com.baidu.location.f$c a -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.baidu.location.f$d -> com.baidu.location.ah:
+com.baidu.location.f$d -> com.baidu.location.ae:
     com.baidu.location.f a -> a
     void handleMessage(android.os.Message) -> handleMessage
-com.baidu.location.g -> com.baidu.location.ai:
+com.baidu.location.g -> com.baidu.location.af:
     java.lang.String new -> a
     int c -> b
     int void -> c
@@ -1994,7 +1647,6 @@ com.baidu.location.g -> com.baidu.location.ai:
     void c() -> b
     void for() -> c
     void byte() -> d
-    int a(android.content.Context,android.net.NetworkInfo) -> a
     int new() -> e
     java.lang.String else() -> f
     java.lang.String goto() -> g
@@ -2004,32 +1656,32 @@ com.baidu.location.g -> com.baidu.location.ai:
     java.lang.String void() -> k
     int g() -> l
     android.os.Handler try() -> m
-    java.lang.String do(java.lang.String) -> b
-    android.os.Handler if(android.os.Handler) -> a
-    boolean a(boolean) -> a
-    java.lang.String if() -> n
-    java.lang.String a() -> o
-    android.os.Handler int() -> p
-    android.os.Handler a(android.os.Handler) -> b
-    boolean if(boolean) -> b
-    java.util.ArrayList d() -> q
-    int char() -> r
-    java.util.ArrayList a(java.util.ArrayList) -> a
-    boolean int(boolean) -> c
-    boolean case() -> s
-    java.lang.String do() -> t
-    java.lang.String a(java.lang.String) -> c
-    boolean for(boolean) -> d
-    boolean do(boolean) -> e
-com.baidu.location.g$1 -> com.baidu.location.aj:
+    java.lang.String do$16915f7f() -> n
+    android.os.Handler if$7ca32c81() -> o
+    boolean a$138603() -> p
+    java.lang.String if() -> q
+    java.lang.String a() -> r
+    android.os.Handler int() -> s
+    android.os.Handler a$7ca32c81() -> t
+    boolean if$138603() -> u
+    java.util.ArrayList d() -> v
+    int char() -> w
+    java.util.ArrayList a$66d0ef51() -> x
+    boolean int$138603() -> y
+    boolean case() -> z
+    java.lang.String do() -> A
+    java.lang.String a$16915f7f() -> B
+    boolean for$138603() -> C
+    boolean do$138603() -> D
+com.baidu.location.g$1 -> com.baidu.location.ag:
     void run() -> run
-com.baidu.location.g$2 -> com.baidu.location.ak:
+com.baidu.location.g$2 -> com.baidu.location.ah:
     void run() -> run
-com.baidu.location.g$3 -> com.baidu.location.al:
+com.baidu.location.g$3 -> com.baidu.location.ai:
     void run() -> run
-com.baidu.location.g$4 -> com.baidu.location.am:
+com.baidu.location.g$4 -> com.baidu.location.aj:
     void run() -> run
-com.baidu.location.i -> com.baidu.location.an:
+com.baidu.location.i -> com.baidu.location.ak:
     java.lang.String do -> a
     java.util.ArrayList byte -> b
     float goto -> c
@@ -2038,33 +1690,23 @@ com.baidu.location.i -> com.baidu.location.an:
     com.baidu.location.LocationClient d -> f
     android.content.Context if -> g
     int a -> h
-    long char -> i
-    boolean void -> j
-    boolean long -> k
-    android.app.PendingIntent try -> l
-    android.app.AlarmManager for -> m
-    com.baidu.location.i$b else -> n
-    com.baidu.location.i$a int -> o
-    boolean c -> p
-    void if() -> a
-    int if(com.baidu.location.BDNotifyListener) -> a
-    int do(com.baidu.location.BDNotifyListener) -> b
-    boolean do() -> b
-    void a() -> c
+    long char -> o
+    boolean void -> i
+    boolean long -> j
+    android.app.PendingIntent try -> k
+    android.app.AlarmManager for -> l
+    com.baidu.location.i$b else -> m
+    com.baidu.location.i$a int -> p
+    boolean c -> n
+    void a() -> a
     void a(long) -> a
-    void a(com.baidu.location.BDLocation) -> a
-    void a(com.baidu.location.i,com.baidu.location.BDLocation) -> a
-    java.lang.String a(com.baidu.location.i) -> a
-    java.util.ArrayList do(com.baidu.location.i) -> b
-    com.baidu.location.LocationClient if(com.baidu.location.i) -> c
-com.baidu.location.i$a -> com.baidu.location.ao:
+com.baidu.location.i$a -> com.baidu.location.al:
     com.baidu.location.i a -> a
     void onReceiveLocation(com.baidu.location.BDLocation) -> a
-    void onReceivePoi(com.baidu.location.BDLocation) -> b
-com.baidu.location.i$b -> com.baidu.location.ap:
+com.baidu.location.i$b -> com.baidu.location.am:
     com.baidu.location.i a -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.baidu.location.j -> com.baidu.location.aq:
+com.baidu.location.j -> com.baidu.location.an:
     boolean try -> a
     boolean v -> b
     boolean I -> c
@@ -2136,17 +1778,13 @@ com.baidu.location.j -> com.baidu.location.aq:
     void if(java.lang.String,java.lang.String) -> b
     boolean a(java.lang.String) -> a
     java.lang.String do() -> d
-    java.lang.String a(byte[],boolean) -> a
-    java.lang.String a(byte[],java.lang.String,boolean) -> a
-com.baidu.location.j$a -> com.baidu.location.ar:
+    java.lang.String a$5a238448(byte[]) -> a
+com.baidu.location.j$a -> com.baidu.location.ao:
     java.lang.String if -> a
     java.lang.String if(android.content.Context) -> a
-    java.lang.String a(android.content.Context) -> b
-com.baidu.location.j$b -> com.baidu.location.as:
-    java.lang.String a(android.content.Context) -> a
-    java.lang.String do(android.content.Context) -> b
-    java.lang.String if(android.content.Context) -> c
-com.baidu.location.k -> com.baidu.location.at:
+com.baidu.location.j$b -> com.baidu.location.ap:
+    java.lang.String do(android.content.Context) -> a
+com.baidu.location.k -> com.baidu.location.aq:
     java.lang.String else -> a
     java.util.ArrayList void -> b
     java.util.ArrayList try -> c
@@ -2178,20 +1816,14 @@ com.baidu.location.k -> com.baidu.location.at:
     boolean a(android.location.Location) -> a
     boolean a(android.location.Location,com.baidu.location.e$c) -> a
     void if(java.lang.String) -> a
-    void a(java.lang.String) -> b
-    void do(java.lang.String) -> c
     int a(int,int,int,long) -> a
     int if(java.util.List,int) -> a
     int a(java.util.List,int) -> b
-    boolean a(int,int,int,int,long) -> a
+    boolean a$2e71544d(int,int,int,int) -> a
     void a(com.baidu.location.c$a,com.baidu.location.e$c,java.lang.String,double,double,java.lang.String) -> a
 com.baidu.mapapi.SDKInitializer -> com.baidu.c.a:
     boolean a -> a
-    void initialize(java.lang.String,android.content.Context) -> a
-    void initialize(android.content.Context) -> a
-com.baidu.mapapi.VersionInfo -> com.baidu.c.b:
-    java.lang.String getApiVersion() -> a
-com.baidu.mapapi.a -> com.baidu.c.c:
+com.baidu.mapapi.a -> com.baidu.c.b:
     java.lang.String a -> a
     android.content.Context b -> b
     android.os.Handler c -> c
@@ -2201,10 +1833,9 @@ com.baidu.mapapi.a -> com.baidu.c.c:
     com.baidu.mapapi.a a() -> a
     void a(android.content.Context) -> a
     void b() -> b
-    void e() -> c
     void a(android.os.Message) -> a
     void a(com.baidu.mapapi.utils.PermissionCheck$b) -> a
-com.baidu.mapapi.b -> com.baidu.c.d:
+com.baidu.mapapi.b -> com.baidu.c.c:
     com.baidu.mapapi.a a -> a
     void handleMessage(android.os.Message) -> handleMessage
 com.baidu.mapapi.model.LatLng -> com.baidu.c.a.a:
@@ -2218,10 +1849,8 @@ com.baidu.mapapi.model.a -> com.baidu.c.a.b:
     double[] c -> c
     double[][] d -> d
     double[][] e -> e
-    com.baidu.mapapi.model.a$a a(com.baidu.mapapi.model.a$a,double[]) -> a
     com.baidu.mapapi.model.LatLng a(com.baidu.platform.comapi.a.b) -> a
     com.baidu.platform.comapi.a.d b(com.baidu.mapapi.model.LatLng) -> a
-    com.baidu.platform.comapi.a.d a(float,float,java.lang.String) -> a
 com.baidu.mapapi.model.a$a -> com.baidu.c.a.c:
     double a -> a
     double b -> b
@@ -2248,66 +1877,38 @@ com.baidu.mapapi.search.core.SearchResult$ERRORNO -> com.baidu.c.b.a.c:
 com.baidu.mapapi.search.geocode.GeoCodeResult -> com.baidu.c.b.b.a:
     com.baidu.mapapi.model.LatLng a -> b
     java.lang.String b -> c
-    void a(com.baidu.mapapi.model.LatLng) -> a
-    void setAddress(java.lang.String) -> a
 com.baidu.mapapi.search.geocode.GeoCoder -> com.baidu.c.b.b.b:
     com.baidu.platform.comapi.b.d a -> a
     com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener b -> b
     boolean c -> c
     int d -> d
     int e -> e
-    com.baidu.mapapi.search.geocode.GeoCoder newInstance() -> a
-    boolean reverseGeoCode(com.baidu.mapapi.search.geocode.ReverseGeoCodeOption) -> a
-    void setOnGetGeoCodeResultListener(com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener) -> a
-    boolean a(com.baidu.mapapi.search.geocode.GeoCoder) -> a
-    com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener b(com.baidu.mapapi.search.geocode.GeoCoder) -> b
-    int c(com.baidu.mapapi.search.geocode.GeoCoder) -> c
-com.baidu.mapapi.search.geocode.GeoCoder$1 -> com.baidu.c.b.b.c:
-com.baidu.mapapi.search.geocode.GeoCoder$a -> com.baidu.c.b.b.d:
+com.baidu.mapapi.search.geocode.GeoCoder$a -> com.baidu.c.b.b.c:
     com.baidu.mapapi.search.geocode.GeoCoder a -> a
-    void a(java.lang.String) -> a
-    void b(java.lang.String) -> b
-    void c(java.lang.String) -> c
-    void d(java.lang.String) -> d
-    void e(java.lang.String) -> e
-    void f(java.lang.String) -> f
-    void g(java.lang.String) -> g
-    void h(java.lang.String) -> h
-    void i(java.lang.String) -> i
-    void j(java.lang.String) -> j
-    void k(java.lang.String) -> k
-    void a(int) -> a
-com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener -> com.baidu.c.b.b.e:
+    void i(java.lang.String) -> a
+    void a$13462e() -> a
+com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener -> com.baidu.c.b.b.d:
     void onGetGeoCodeResult(com.baidu.mapapi.search.geocode.GeoCodeResult) -> a
     void onGetReverseGeoCodeResult(com.baidu.mapapi.search.geocode.ReverseGeoCodeResult) -> a
-com.baidu.mapapi.search.geocode.ReverseGeoCodeOption -> com.baidu.c.b.b.f:
+com.baidu.mapapi.search.geocode.ReverseGeoCodeOption -> com.baidu.c.b.b.e:
     com.baidu.mapapi.model.LatLng a -> a
-    com.baidu.mapapi.search.geocode.ReverseGeoCodeOption location(com.baidu.mapapi.model.LatLng) -> a
-com.baidu.mapapi.search.geocode.ReverseGeoCodeResult -> com.baidu.c.b.b.g:
+com.baidu.mapapi.search.geocode.ReverseGeoCodeResult -> com.baidu.c.b.b.f:
     java.lang.String a -> b
     java.lang.String b -> c
     com.baidu.mapapi.search.geocode.ReverseGeoCodeResult$AddressComponent c -> d
     com.baidu.mapapi.model.LatLng d -> e
     java.util.List e -> f
-    void a(java.lang.String) -> a
-    java.lang.String getAddress() -> a
-    void b(java.lang.String) -> b
-    com.baidu.mapapi.search.geocode.ReverseGeoCodeResult$AddressComponent getAddressDetail() -> b
-    void a(com.baidu.mapapi.search.geocode.ReverseGeoCodeResult$AddressComponent) -> a
-    void a(com.baidu.mapapi.model.LatLng) -> a
-    void a(java.util.List) -> a
-com.baidu.mapapi.search.geocode.ReverseGeoCodeResult$AddressComponent -> com.baidu.c.b.b.h:
+com.baidu.mapapi.search.geocode.ReverseGeoCodeResult$AddressComponent -> com.baidu.c.b.b.g:
     java.lang.String streetNumber -> a
     java.lang.String street -> b
     java.lang.String district -> c
     java.lang.String city -> d
     java.lang.String province -> e
-com.baidu.mapapi.search.geocode.a -> com.baidu.c.b.b.i:
+com.baidu.mapapi.search.geocode.a -> com.baidu.c.b.b.h:
     com.baidu.mapapi.search.geocode.ReverseGeoCodeResult a(java.lang.String) -> a
     com.baidu.mapapi.search.geocode.GeoCodeResult b(java.lang.String) -> b
-    com.baidu.mapapi.search.geocode.ReverseGeoCodeResult$AddressComponent a(org.json.JSONObject,java.lang.String) -> a
-    com.baidu.mapapi.model.LatLng b(org.json.JSONObject,java.lang.String) -> b
-    java.util.List c(org.json.JSONObject,java.lang.String) -> c
+    com.baidu.mapapi.model.LatLng b(org.json.JSONObject,java.lang.String) -> a
+    java.util.List c(org.json.JSONObject,java.lang.String) -> b
 com.baidu.mapapi.utils.PermissionCheck -> com.baidu.c.c.a:
     java.lang.String a -> a
     android.content.Context b -> b
@@ -2318,40 +1919,27 @@ com.baidu.mapapi.utils.PermissionCheck -> com.baidu.c.c.a:
     void setPermissionCheckResultListener(com.baidu.mapapi.utils.PermissionCheck$c) -> a
     void init(android.content.Context) -> a
     com.baidu.mapapi.utils.PermissionCheck$c a() -> a
-com.baidu.mapapi.utils.PermissionCheck$1 -> com.baidu.c.c.b:
-com.baidu.mapapi.utils.PermissionCheck$a -> com.baidu.c.c.c:
-    void a(int,java.lang.String) -> a
-com.baidu.mapapi.utils.PermissionCheck$b -> com.baidu.c.c.d:
+com.baidu.mapapi.utils.PermissionCheck$a -> com.baidu.c.c.b:
+    void a$4f708078(java.lang.String) -> a
+com.baidu.mapapi.utils.PermissionCheck$b -> com.baidu.c.c.c:
     int a -> a
     java.lang.String b -> b
     java.lang.String c -> c
     java.lang.String d -> d
     java.lang.String e -> e
     java.lang.String toString() -> toString
-com.baidu.mapapi.utils.PermissionCheck$c -> com.baidu.c.c.e:
+com.baidu.mapapi.utils.PermissionCheck$c -> com.baidu.c.c.d:
     void a(com.baidu.mapapi.utils.PermissionCheck$b) -> a
-com.baidu.mapapi.utils.a -> com.baidu.c.c.f:
-    java.lang.String a(android.content.Context) -> a
+com.baidu.mapapi.utils.a -> com.baidu.c.c.e:
     java.lang.String a(android.content.Context,java.lang.String) -> a
     java.lang.String a(java.security.cert.X509Certificate) -> a
     byte[] a(byte[]) -> a
-com.baidu.mapapi.utils.a$a -> com.baidu.c.c.g:
-    java.lang.String a(byte[]) -> a
-com.baidu.mapapi.utils.b -> com.baidu.c.c.h:
-    java.lang.String a -> a
-    com.baidu.mapapi.utils.e g -> b
-    void a(java.lang.String) -> a
-com.baidu.mapapi.utils.e -> com.baidu.c.c.i:
-    com.baidu.mapapi.utils.e a -> a
 com.baidu.platform.comapi.a -> com.baidu.platform.a.a:
     java.lang.String a -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-    void a(android.content.Context) -> a
 com.baidu.platform.comapi.a.b -> com.baidu.platform.a.a.a:
     int a -> a
     int b -> b
-    int a() -> a
-    int b() -> b
     java.lang.String toString() -> toString
     boolean equals(java.lang.Object) -> equals
 com.baidu.platform.comapi.a.d -> com.baidu.platform.a.a.b:
@@ -2365,18 +1953,8 @@ com.baidu.platform.comapi.a.d -> com.baidu.platform.a.a.b:
     int hashCode() -> hashCode
     boolean equals(java.lang.Object) -> equals
 com.baidu.platform.comapi.b.b -> com.baidu.platform.a.b.a:
-    void a(java.lang.String) -> a
-    void b(java.lang.String) -> b
-    void c(java.lang.String) -> c
-    void d(java.lang.String) -> d
-    void e(java.lang.String) -> e
-    void f(java.lang.String) -> f
-    void g(java.lang.String) -> g
-    void h(java.lang.String) -> h
-    void i(java.lang.String) -> i
-    void j(java.lang.String) -> j
-    void k(java.lang.String) -> k
-    void a(int) -> a
+    void i(java.lang.String) -> a
+    void a$13462e() -> a
 com.baidu.platform.comapi.b.c -> com.baidu.platform.a.b.b:
     java.lang.String a -> a
     com.baidu.platform.comapi.b.b b -> b
@@ -2405,8 +1983,8 @@ com.baidu.platform.comapi.d.b -> com.baidu.platform.a.c.a:
     java.lang.String b -> b
     int c -> c
     void a(android.content.Context) -> a
-    android.net.NetworkInfo b(android.content.Context) -> b
-    java.lang.String c(android.content.Context) -> c
+    android.net.NetworkInfo b(android.content.Context) -> c
+    java.lang.String c(android.content.Context) -> b
     boolean a(android.net.NetworkInfo) -> a
 com.baidu.platform.comapi.d.c -> com.baidu.platform.a.c.b:
     java.lang.String G -> G
@@ -2445,58 +2023,38 @@ com.baidu.platform.comapi.d.c -> com.baidu.platform.a.c.b:
     int I -> I
     int J -> J
     java.lang.String F -> F
-    void e(android.content.Context) -> e
-    void f(android.content.Context) -> f
-    void g(android.content.Context) -> g
-    void h(android.content.Context) -> h
-    void i(android.content.Context) -> i
-    java.lang.String a(android.content.Context) -> a
-    byte[] b(android.content.Context) -> b
-    java.lang.String j(android.content.Context) -> j
-    java.lang.String a() -> a
-    java.lang.String k(android.content.Context) -> k
-    void l(android.content.Context) -> l
-    void c(android.content.Context) -> c
-    void d(android.content.Context) -> d
-    android.os.Bundle c() -> b
-    void e() -> c
+    java.lang.String a(android.content.Context) -> c
+    byte[] b(android.content.Context) -> d
+    java.lang.String j(android.content.Context) -> e
+    java.lang.String k(android.content.Context) -> f
+    void c(android.content.Context) -> a
+    void d(android.content.Context) -> b
+    android.os.Bundle c() -> a
+    void e() -> b
     void a(java.lang.String) -> a
-    java.lang.String g() -> d
-    void h() -> e
+    java.lang.String g() -> c
+    void h() -> d
     void a(java.lang.String,java.lang.String) -> a
-    java.lang.String i() -> f
-    int j() -> g
-    java.lang.String k() -> h
-    int l() -> i
-    java.lang.String m() -> j
-    int p() -> k
-    java.lang.String u() -> l
+    java.lang.String u() -> e
 com.baidu.platform.comjni.base.networkdetect.JNINetworkDetect -> com.baidu.platform.comjni.a.a.a:
 com.baidu.platform.comjni.base.networkdetect.a -> com.baidu.platform.comjni.a.a.b:
     int a -> a
     com.baidu.platform.comjni.base.networkdetect.JNINetworkDetect b -> b
-com.baidu.platform.comjni.engine.AppEngine -> com.baidu.platform.comjni.engine.a:
-    void InitClass() -> a
-    boolean InitEngine(android.content.Context,android.os.Bundle) -> a
-    void SetProxyInfo(java.lang.String,int) -> a
-    boolean StartSocketProc() -> b
 com.baidu.platform.comjni.engine.JNIEngine -> com.baidu.platform.comjni.engine.JNIEngine:
     int initClass(java.lang.Object,int) -> initClass
     boolean InitEngine(android.content.Context,android.os.Bundle) -> InitEngine
     void SetProxyInfo(java.lang.String,int) -> SetProxyInfo
     boolean StartSocketProc() -> StartSocketProc
-com.baidu.platform.comjni.engine.a -> com.baidu.platform.comjni.engine.b:
+com.baidu.platform.comjni.engine.a -> com.baidu.platform.comjni.engine.a:
     java.lang.String a -> a
     android.util.SparseArray b -> b
-    void a(int,android.os.Handler) -> a
+    void a$280d2da2(android.os.Handler) -> a
 com.baidu.platform.comjni.map.commonmemcache.JNICommonMemCache -> com.baidu.platform.comjni.map.commonmemcache.JNICommonMemCache:
     int Create() -> Create
     void Init(int,android.os.Bundle) -> Init
 com.baidu.platform.comjni.map.commonmemcache.a -> com.baidu.platform.comjni.map.commonmemcache.a:
     int a -> a
     com.baidu.platform.comjni.map.commonmemcache.JNICommonMemCache b -> b
-    int a() -> a
-    void a(android.os.Bundle) -> a
 com.baidu.platform.comjni.map.search.JNISearch -> com.baidu.platform.comjni.map.search.JNISearch:
     int Create() -> Create
     java.lang.String GetSearchResult(int,int) -> GetSearchResult
@@ -2517,8 +2075,6 @@ com.baidu.platform.comjni.tools.ParcelItem -> com.baidu.platform.comjni.tools.Pa
     void writeToParcel(android.os.Parcel,int) -> writeToParcel
     int describeContents() -> describeContents
 com.baidu.platform.comjni.tools.b -> com.baidu.platform.comjni.tools.a:
-    com.baidu.platform.comjni.tools.ParcelItem a(android.os.Parcel) -> a
-    com.baidu.platform.comjni.tools.ParcelItem[] a(int) -> a
     java.lang.Object[] newArray(int) -> newArray
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
 com.baidu.vi.VMsg -> com.baidu.vi.VMsg:
@@ -2532,7 +2088,6 @@ com.baidu.vi.VMsg$a -> com.baidu.vi.a:
     void handleMessage(android.os.Message) -> handleMessage
 com.baidu.vi.b -> com.baidu.vi.b:
     android.content.Context a -> a
-    void a(android.content.Context) -> a
 com.example.logic.FileTraversal -> com.example.logic.FileTraversal:
     java.lang.String filename -> a
     java.util.List filecontent -> b
@@ -2540,8 +2095,6 @@ com.example.logic.FileTraversal -> com.example.logic.FileTraversal:
     int describeContents() -> describeContents
     void writeToParcel(android.os.Parcel,int) -> writeToParcel
 com.example.logic.FileTraversal$1 -> com.example.logic.a:
-    com.example.logic.FileTraversal[] newArray(int) -> a
-    com.example.logic.FileTraversal createFromParcel(android.os.Parcel) -> a
     java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
     java.lang.Object[] newArray(int) -> newArray
 com.example.logic.ImgCallBack -> com.example.logic.b:
@@ -2593,7 +2146,7 @@ com.example.logic.ImgsActivity$1 -> com.example.logic.f:
     void resultImgCall(android.widget.ImageView,android.graphics.Bitmap) -> a
 com.example.logic.ImgsActivity$2 -> com.example.logic.g:
     com.example.logic.ImgsActivity this$0 -> a
-    void OnItemClick(android.view.View,int) -> a
+    void OnItemClick$5359dc9a(int) -> a
 com.example.logic.ImgsAdapter -> com.example.logic.h:
     android.content.Context context -> a
     java.util.List data -> b
@@ -2614,7 +2167,7 @@ com.example.logic.ImgsAdapter$ImgClallBackLisner -> com.example.logic.j:
     com.example.logic.ImgsAdapter this$0 -> b
     void resultImgCall(android.widget.ImageView,android.graphics.Bitmap) -> a
 com.example.logic.ImgsAdapter$OnItemClickClass -> com.example.logic.k:
-    void OnItemClick(android.view.View,int) -> a
+    void OnItemClick$5359dc9a(int) -> a
 com.example.logic.ImgsAdapter$OnPhotoClick -> com.example.logic.l:
     int position -> a
     com.example.logic.ImgsAdapter this$0 -> b
@@ -2622,8 +2175,6 @@ com.example.logic.ImgsAdapter$OnPhotoClick -> com.example.logic.l:
 com.example.logic.Util -> com.example.logic.m:
     android.content.Context context -> a
     java.util.ArrayList listAlldir() -> a
-    java.util.List LocalImgFileList() -> b
-    android.graphics.Bitmap getPathBitmap(android.net.Uri,int,int) -> a
     java.lang.String getfileinfo(java.lang.String) -> a
     void imgExcute(android.widget.ImageView,com.example.logic.ImgCallBack,java.lang.String[]) -> a
 com.example.logic.Util$LoadBitAsynk -> com.example.logic.n:
@@ -2631,17 +2182,14 @@ com.example.logic.Util$LoadBitAsynk -> com.example.logic.n:
     com.example.logic.ImgCallBack icb -> b
     com.example.logic.Util this$0 -> c
     android.graphics.Bitmap doInBackground(java.lang.String[]) -> a
-    void onPostExecute(android.graphics.Bitmap) -> a
     void onPostExecute(java.lang.Object) -> onPostExecute
     java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
 com.example.scaningthestreet.util.LocationUtil -> com.example.a.a.a:
-    android.content.Context mContext -> a
-    android.location.LocationManager locationManager -> b
-    android.location.Location location -> c
-    com.example.scaningthestreet.util.MyLocation myLocation -> d
+    android.content.Context mContext -> c
+    android.location.LocationManager locationManager -> d
+    android.location.Location location -> a
+    com.example.scaningthestreet.util.MyLocation myLocation -> b
     android.location.LocationListener locationListener -> e
-    void setMyLocation() -> a
-    void access$0(com.example.scaningthestreet.util.LocationUtil) -> a
 com.example.scaningthestreet.util.LocationUtil$1 -> com.example.a.a.b:
     com.example.scaningthestreet.util.LocationUtil this$0 -> a
     void onLocationChanged(android.location.Location) -> onLocationChanged
@@ -2651,10 +2199,6 @@ com.example.scaningthestreet.util.LocationUtil$1 -> com.example.a.a.b:
 com.example.scaningthestreet.util.MyLocation -> com.example.a.a.c:
     double latitude -> a
     double longitude -> b
-    double getLatitude() -> a
-    void setLatitude(double) -> a
-    double getLongitude() -> b
-    void setLongitude(double) -> b
 com.example.scanningthestreet.AppContext -> com.example.scanningthestreet.AppContext:
     void onCreate() -> onCreate
 com.example.scanningthestreet.MainActivity -> com.example.scanningthestreet.MainActivity:
@@ -2682,14 +2226,12 @@ com.example.scanningthestreet.MainActivity -> com.example.scanningthestreet.Main
     android.os.Handler mHandler -> b
     android.view.View$OnClickListener itemsOnClick -> x
     android.content.BroadcastReceiver receiver -> c
-    void locationInit() -> a
     void onCreate(android.os.Bundle) -> onCreate
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     void onGetGeoCodeResult(com.baidu.mapapi.search.geocode.GeoCodeResult) -> a
     void onGetReverseGeoCodeResult(com.baidu.mapapi.search.geocode.ReverseGeoCodeResult) -> a
     void writeFile(java.lang.String) -> a
     void onClick(android.view.View) -> onClick
-    void showPictureContent() -> b
     void onActivityResult(int,int,android.content.Intent) -> onActivityResult
     void onDestroy() -> onDestroy
     android.widget.EditText access$0(com.example.scanningthestreet.MainActivity) -> a
@@ -2728,7 +2270,6 @@ com.example.scanningthestreet.MainActivity$5 -> com.example.scanningthestreet.e:
 com.example.scanningthestreet.MainActivity$MyLocationListenner -> com.example.scanningthestreet.f:
     com.example.scanningthestreet.MainActivity this$0 -> a
     void onReceiveLocation(com.baidu.location.BDLocation) -> a
-    void onReceivePoi(com.baidu.location.BDLocation) -> b
 com.example.scanningthestreet.SelectPicPopupWindow -> com.example.scanningthestreet.g:
     android.widget.Button btn_take_photo -> a
     android.widget.Button btn_pick_photo -> b

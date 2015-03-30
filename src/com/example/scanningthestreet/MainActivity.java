@@ -344,10 +344,10 @@ public class MainActivity extends Activity implements OnGetGeoCoderResultListene
 			}
 //едуу
 		} else if (requestCode == RESULT_PHOTO) {
-			String pathString = Environment.getExternalStorageDirectory().toString() + mPictureName;
+			mPictureName = Environment.getExternalStorageDirectory().toString() + mPictureName;
 			Message message = new Message();
 			message.what = HANDLE_PHONELUJIN;
-			message.obj = pathString;
+			message.obj = mPictureName;
 			mHandler.sendMessage(message);
 		}
 	}
